@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MITDB"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "MITDB summary"
   s.description  = "A tool to encapsulation of the database"
   s.homepage     = "https://github.com/mcmengchen/MITDB"
