@@ -5,4 +5,5 @@ target "MitDB" do
     pod 'YYModel'
     pod 'FMDBMigrationManager'
     pod 'FMDB/SQLCipher'
+    pod 'MITDB'
 end

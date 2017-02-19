@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MITDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MitDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +42,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>363D44EEF7FF36982E3A765838C33E17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>682B558AE9A9D05EDC4BFC0A098BEF81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CBE70B594F33B7763611CE6F7C18344</key>
+		<key>85AB1851F5A752D9C2FDF5BF39D0E9D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AD22D8B4590C23DDDFFA054154BBFE52</key>
+		<key>C0CC97CB0351FB320710376BCF09D6A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
