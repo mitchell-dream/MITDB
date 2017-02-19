@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FMDBMigrationManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MitDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SQLCipher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>018896F7A09D0A7EA34F3314A3194B4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>682B558AE9A9D05EDC4BFC0A098BEF81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CBE70B594F33B7763611CE6F7C18344</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD22D8B4590C23DDDFFA054154BBFE52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E717045B5451A9293C1C2D5BA968E481</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
