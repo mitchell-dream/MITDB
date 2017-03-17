@@ -42,7 +42,7 @@
 //删
 - (void)remove;
 + (void)remove:(NSArray<id<MitDBProtocal>>*)arr;
-
++ (void)clear;
 
 //查
 + (void)selectAllCompletion:(void(^)(NSArray *arr))completion;
