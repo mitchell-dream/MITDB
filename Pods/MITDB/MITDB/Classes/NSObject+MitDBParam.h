@@ -18,6 +18,8 @@
 - (NSString *)updateSqlWithParam:(MitDBParam *)param;
 //删除
 - (NSString *)removeSqlWithParam:(MitDBParam *)param;
+//清空
+- (NSString *)removeAllSql:(NSString *)tableName;
 //查询
 - (NSString *)selectSqlWithParam:(MitDBParam *)param;
 

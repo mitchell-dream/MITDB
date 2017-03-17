@@ -156,6 +156,12 @@
     return sql;
 }
 
+#pragma mark action 清空语句
+- (NSString *)removeAllSql:(NSString *)tableName{
+    NSString * str = [NSString stringWithFormat:@"truncate table %@",tableName];
+    return str;
+}
+
 
 #pragma mark action 更新
 - (NSString *)updateSqlWithParam:(MitDBParam *)param{

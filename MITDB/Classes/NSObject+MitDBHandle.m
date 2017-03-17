@@ -188,7 +188,20 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
 }
 
-
+#pragma mark action 清空表内容
++ (void)clear{
+    [DBQueue() inDatabase:^(FMDatabase *db) {
+        NSString * sql =  [self removeAllSql:[self tableName]];
+        NSError * err = nil;
+        NSLog(@"sql = ---%@",sql);
+        if ([db executeUpdate:sql withErrorAndBindings:&err]) {
+            NSLog(@"删除成功");
+        }else{
+            NSLog(@"失败 %@",err);
+        }
+    }];
+    
+}
 #pragma mark action 修改
 - (void)update{
     [self updateWithParam:nil];
