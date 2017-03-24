@@ -40,10 +40,14 @@
 - (void)update;
 - (void)updateWithParam:(MitDBParam*)param;
 + (void)update:(NSArray <id<MitDBProtocal>> *)arr param:(MitDBParam *)param;
++ (void)update:(NSArray <id<MitDBProtocal>> *)arr
+        param:(MitDBParam *)param
+        inTransaction:(BOOL)transaction;
 
 //删
 - (void)remove;
-+ (void)remove:(NSArray<id<MitDBProtocal>>*)arr;
++ (void)remove:(NSArray<id<MitDBProtocal>>*)arr param:(MitDBParam *)param;
++ (void)remove:(NSArray<id<MitDBProtocal>>*)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction;
 + (void)clear;
 
 //查

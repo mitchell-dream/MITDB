@@ -201,9 +201,25 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }];
 }
 
-+ (void)remove:(NSArray<id<MitDBProtocal>> *)arr{
-    for (NSObject * obj in arr) {
-        [obj remove];
++ (void)remove:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
+    if (!param) {
+        for (NSObject * obj in arr) {
+            [obj remove];
+        }
+    }else{
+        
+    }
+
+}
++ (void)remove:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
+    if (!transaction) {
+        [self remove:arr param:param];
+    }else{
+        NSMutableArray * ar = [NSMutableArray arrayWithCapacity:0];
+        for (NSObject * obj in arr) {
+            [ar addObject:[obj saveSqlWithParam:param]];
+        }
+        [self executeSQLs:[ar copy] withTransaction:true];
     }
 }
 
@@ -241,8 +257,17 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     for (NSObject * obj in arr) {
         [obj updateWithParam:param];
     }
-    
-    
+}
++ (void)update:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
+    if (!transaction) {
+        [self update:arr param:param];
+    }else{
+        NSMutableArray * ar = [NSMutableArray arrayWithCapacity:0];
+        for (NSObject * obj in arr) {
+            [ar addObject:[obj updateSqlWithParam:param]];
+        }
+        [self executeSQLs:ar withTransaction:true];
+    }
 }
 
 
