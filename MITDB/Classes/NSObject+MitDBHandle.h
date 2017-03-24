@@ -31,7 +31,9 @@
 - (void)save;
 - (void)saveWithParam:(MitDBParam *)param;
 + (void)save:(NSArray <id<MitDBProtocal>> *)arr param:(MitDBParam *)param;
-+ (void)save:(NSArray <id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction;
++ (void)save:(NSArray <id<MitDBProtocal>> *)arr
+        param:(MitDBParam *)param
+        inTransaction:(BOOL)transaction;
 
 
 //改

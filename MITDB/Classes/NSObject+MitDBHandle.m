@@ -165,7 +165,11 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     if (!transaction) {
         [self save:arr param:param];
     }else{
-        
+        NSMutableArray * ar = [NSMutableArray arrayWithCapacity:0];
+        for (NSObject * obj in arr) {
+            [ar addObject:[obj saveSqlWithParam:param]];
+        }
+        [self executeSQLs:ar withTransaction:true];
     }
 }
 + (void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
