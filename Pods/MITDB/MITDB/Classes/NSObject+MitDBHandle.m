@@ -161,11 +161,26 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
         }
     }];
 }
-+(void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
++(void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
+    if (!transaction) {
+        [self save:arr param:param];
+    }else{
+        
+    }
+}
++ (void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
     for (NSObject * obj in arr) {
         [obj saveWithParam:param];
     }
 }
++ (void)saveinTransaction:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
+    NSMutableArray * ar = [NSMutableArray arrayWithCapacity:0];
+    for (NSObject * obj in arr) {
+        [ar addObject:[obj saveSqlWithParam:param]];
+    }
+    [self executeSQLs:[ar copy] withTransaction:true];
+}
+
 
 
 #pragma mark action 删除
@@ -242,7 +257,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }];
 }
 
-- (void)selectWithParam:(MitDBParam *)param completion:(void (^)(NSArray *))completion{
++ (void)selectWithParam:(MitDBParam *)param completion:(void (^)(NSArray *))completion{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql = [self selectSqlWithParam:param];
         FMResultSet * set = [db executeQuery:sql];
@@ -329,10 +344,12 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
 }
 
 #pragma mark action 执行任务
-+(void)executeSQL:(NSString *)sql{
++(BOOL)executeSQL:(NSString *)sql{
+    __block BOOL result = false;
     if (sql) {
         [DBQueue() inDatabase:^(FMDatabase *db) {
-            if([db executeUpdate:sql])
+            result = [db executeUpdate:sql];
+            if(result)
             {
                 NSLog(@"执行成功");
             }else{
@@ -340,5 +357,21 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
             }
         }];
     }
+    return result;
+}
+
++ (BOOL)executeSQLs:(NSArray *)sqls withTransaction:(BOOL)isTransaction{
+    __block BOOL result = false;
+    if (sqls.count>0) {
+        [DBQueue() inTransaction:^(FMDatabase *db, BOOL *rollback) {
+            for (NSString * str in sqls) {
+                result = [db executeUpdate:str];
+                if (!result) {
+                    NSLog(@"执行出现问题，自动回滚");
+                }
+            }
+        }];
+    }
+    return result;
 }
 @end

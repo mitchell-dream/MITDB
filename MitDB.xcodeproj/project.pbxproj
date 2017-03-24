@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8260B0F715C521F3B3C3130E /* libPods-MitDB-MitDBHandleTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6682651B5C38858AEB77F2ED /* libPods-MitDB-MitDBHandleTest.a */; };
 		BDF51D45C7DCCCCAB9489391 /* libPods-MitDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDD542812575E2697FEB71E /* libPods-MitDB.a */; };
+		FC24E6A91E84BC9B001F9D29 /* MitDBHandleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC24E6A81E84BC9B001F9D29 /* MitDBHandleTest.m */; };
+		FC24E6B21E84C27B001F9D29 /* MITDBTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC24E6B11E84C27B001F9D29 /* MITDBTestModel.m */; };
 		FC6C5E661E594D8D006C7114 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C5E461E594D8D006C7114 /* AppDelegate.m */; };
 		FC6C5E671E594D8D006C7114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC6C5E471E594D8D006C7114 /* Assets.xcassets */; };
 		FC6C5E681E594D8D006C7114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC6C5E481E594D8D006C7114 /* LaunchScreen.storyboard */; };
@@ -17,10 +20,28 @@
 		FC6C5E791E59570F006C7114 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC6C5E4C1E594D8D006C7114 /* Info.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC24E6AB1E84BC9B001F9D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC6C5DC81E594A2A006C7114 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC6C5DCF1E594A2A006C7114;
+			remoteInfo = MitDB;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0BDD542812575E2697FEB71E /* libPods-MitDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MitDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		138029090AEE52A34159D517 /* Pods-MitDB-MitDBHandleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MitDB-MitDBHandleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MitDB-MitDBHandleTest/Pods-MitDB-MitDBHandleTest.release.xcconfig"; sourceTree = "<group>"; };
 		284D9A28AE86CAF56A4AA88A /* Pods-MitDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MitDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MitDB/Pods-MitDB.debug.xcconfig"; sourceTree = "<group>"; };
+		6682651B5C38858AEB77F2ED /* libPods-MitDB-MitDBHandleTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MitDB-MitDBHandleTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C8118F95438751B1B2337B /* Pods-MitDB-MitDBHandleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MitDB-MitDBHandleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MitDB-MitDBHandleTest/Pods-MitDB-MitDBHandleTest.debug.xcconfig"; sourceTree = "<group>"; };
 		872FED491A86A793CB83B69E /* Pods-MitDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MitDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-MitDB/Pods-MitDB.release.xcconfig"; sourceTree = "<group>"; };
+		FC24E6A61E84BC9B001F9D29 /* MitDBHandleTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MitDBHandleTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC24E6A81E84BC9B001F9D29 /* MitDBHandleTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MitDBHandleTest.m; sourceTree = "<group>"; };
+		FC24E6AA1E84BC9B001F9D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC24E6B01E84C27B001F9D29 /* MITDBTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITDBTestModel.h; sourceTree = "<group>"; };
+		FC24E6B11E84C27B001F9D29 /* MITDBTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITDBTestModel.m; sourceTree = "<group>"; };
 		FC6C5DD01E594A2A006C7114 /* MitDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MitDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6C5E451E594D8D006C7114 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC6C5E461E594D8D006C7114 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,6 +55,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FC24E6A31E84BC9B001F9D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8260B0F715C521F3B3C3130E /* libPods-MitDB-MitDBHandleTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC6C5DCD1E594A2A006C7114 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0BDD542812575E2697FEB71E /* libPods-MitDB.a */,
+				6682651B5C38858AEB77F2ED /* libPods-MitDB-MitDBHandleTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,14 +88,26 @@
 			children = (
 				284D9A28AE86CAF56A4AA88A /* Pods-MitDB.debug.xcconfig */,
 				872FED491A86A793CB83B69E /* Pods-MitDB.release.xcconfig */,
+				84C8118F95438751B1B2337B /* Pods-MitDB-MitDBHandleTest.debug.xcconfig */,
+				138029090AEE52A34159D517 /* Pods-MitDB-MitDBHandleTest.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC24E6A71E84BC9B001F9D29 /* MitDBHandleTest */ = {
+			isa = PBXGroup;
+			children = (
+				FC24E6A81E84BC9B001F9D29 /* MitDBHandleTest.m */,
+				FC24E6AA1E84BC9B001F9D29 /* Info.plist */,
+			);
+			path = MitDBHandleTest;
 			sourceTree = "<group>";
 		};
 		FC6C5DC71E594A2A006C7114 = {
 			isa = PBXGroup;
 			children = (
 				FC6C5E441E594D8D006C7114 /* MitDBDemo */,
+				FC24E6A71E84BC9B001F9D29 /* MitDBHandleTest */,
 				FC6C5DD11E594A2A006C7114 /* Products */,
 				3134E219F0D40A95252EB227 /* Pods */,
 				14A0A8C06C665206197FD7F4 /* Frameworks */,
@@ -76,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FC6C5DD01E594A2A006C7114 /* MitDB.app */,
+				FC24E6A61E84BC9B001F9D29 /* MitDBHandleTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +135,8 @@
 				FC6C5E4D1E594D8D006C7114 /* main.m */,
 				FC6C5E641E594D8D006C7114 /* ViewController.h */,
 				FC6C5E651E594D8D006C7114 /* ViewController.m */,
+				FC24E6B01E84C27B001F9D29 /* MITDBTestModel.h */,
+				FC24E6B11E84C27B001F9D29 /* MITDBTestModel.m */,
 			);
 			path = MitDBDemo;
 			sourceTree = "<group>";
@@ -99,6 +144,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FC24E6A51E84BC9B001F9D29 /* MitDBHandleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC24E6AF1E84BC9B001F9D29 /* Build configuration list for PBXNativeTarget "MitDBHandleTest" */;
+			buildPhases = (
+				E5395FF899BE4083138A78C8 /* [CP] Check Pods Manifest.lock */,
+				FC24E6A21E84BC9B001F9D29 /* Sources */,
+				FC24E6A31E84BC9B001F9D29 /* Frameworks */,
+				FC24E6A41E84BC9B001F9D29 /* Resources */,
+				6D7B813D07877BE4EF93196D /* [CP] Embed Pods Frameworks */,
+				16A016C1863778C7A565DDBC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC24E6AC1E84BC9B001F9D29 /* PBXTargetDependency */,
+			);
+			name = MitDBHandleTest;
+			productName = MitDBHandleTest;
+			productReference = FC24E6A61E84BC9B001F9D29 /* MitDBHandleTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FC6C5DCF1E594A2A006C7114 /* MitDB */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC6C5DE71E594A2A006C7114 /* Build configuration list for PBXNativeTarget "MitDB" */;
@@ -128,6 +194,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = MENGCHEN;
 				TargetAttributes = {
+					FC24E6A51E84BC9B001F9D29 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T43EX2XKU3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC6C5DCF1E594A2A006C7114;
+					};
 					FC6C5DCF1E594A2A006C7114 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = T43EX2XKU3;
@@ -149,11 +221,19 @@
 			projectRoot = "";
 			targets = (
 				FC6C5DCF1E594A2A006C7114 /* MitDB */,
+				FC24E6A51E84BC9B001F9D29 /* MitDBHandleTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FC24E6A41E84BC9B001F9D29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC6C5DCE1E594A2A006C7114 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +248,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		16A016C1863778C7A565DDBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MitDB-MitDBHandleTest/Pods-MitDB-MitDBHandleTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1D69DE7B96F852F249F90A93 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +276,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MitDB/Pods-MitDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D7B813D07877BE4EF93196D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MitDB-MitDBHandleTest/Pods-MitDB-MitDBHandleTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5395FF899BE4083138A78C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FC2C4E4DFFEA79080B63AEAB /* [CP] Check Pods Manifest.lock */ = {
@@ -216,10 +341,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FC24E6A21E84BC9B001F9D29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC24E6A91E84BC9B001F9D29 /* MitDBHandleTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC6C5DCC1E594A2A006C7114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC24E6B21E84C27B001F9D29 /* MITDBTestModel.m in Sources */,
 				FC6C5E761E594D8D006C7114 /* ViewController.m in Sources */,
 				FC6C5E6B1E594D8D006C7114 /* main.m in Sources */,
 				FC6C5E661E594D8D006C7114 /* AppDelegate.m in Sources */,
@@ -227,6 +361,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC24E6AC1E84BC9B001F9D29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC6C5DCF1E594A2A006C7114 /* MitDB */;
+			targetProxy = FC24E6AB1E84BC9B001F9D29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC6C5E481E594D8D006C7114 /* LaunchScreen.storyboard */ = {
@@ -248,6 +390,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FC24E6AD1E84BC9B001F9D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C8118F95438751B1B2337B /* Pods-MitDB-MitDBHandleTest.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = MitDBHandleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HongtaiCaifu.MitDBHandleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MitDB.app/MitDB";
+			};
+			name = Debug;
+		};
+		FC24E6AE1E84BC9B001F9D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138029090AEE52A34159D517 /* Pods-MitDB-MitDBHandleTest.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = MitDBHandleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HongtaiCaifu.MitDBHandleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MitDB.app/MitDB";
+			};
+			name = Release;
+		};
 		FC6C5DE51E594A2A006C7114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -363,6 +533,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FC24E6AF1E84BC9B001F9D29 /* Build configuration list for PBXNativeTarget "MitDBHandleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC24E6AD1E84BC9B001F9D29 /* Debug */,
+				FC24E6AE1E84BC9B001F9D29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FC6C5DCB1E594A2A006C7114 /* Build configuration list for PBXProject "MitDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

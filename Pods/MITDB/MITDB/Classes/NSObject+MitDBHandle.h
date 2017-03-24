@@ -31,7 +31,7 @@
 - (void)save;
 - (void)saveWithParam:(MitDBParam *)param;
 + (void)save:(NSArray <id<MitDBProtocal>> *)arr param:(MitDBParam *)param;
-
++ (void)save:(NSArray <id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction;
 
 
 //改
@@ -46,11 +46,11 @@
 
 //查
 + (void)selectAllCompletion:(void(^)(NSArray *arr))completion;
-- (void)selectWithParam:(MitDBParam *)param completion:(void(^)(NSArray * arr))completion;
++ (void)selectWithParam:(MitDBParam *)param completion:(void(^)(NSArray * arr))completion;
 
 
 //执行自建 sql 语句
-+ (void)executeSQL:(NSString *)sql;
-
++ (BOOL) executeSQL:(NSString *)sql;
++ (BOOL) executeSQLs:(NSArray *)sqls withTransaction:(BOOL)isTransaction;
 
 @end

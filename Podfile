@@ -6,4 +6,10 @@ target "MitDB" do
     pod 'FMDBMigrationManager'
     pod 'FMDB/SQLCipher'
     pod 'MITDB'
+    target "MitDBHandleTest" do
+        pod 'YYModel'
+        pod 'FMDBMigrationManager'
+        pod 'FMDB/SQLCipher'
+        pod 'MITDB'
+    end
 end
