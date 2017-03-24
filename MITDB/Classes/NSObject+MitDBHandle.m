@@ -207,17 +207,17 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
             [obj remove];
         }
     }else{
-        
+        [self remove:arr param:param inTransaction:true];
     }
-
 }
+
 + (void)remove:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
     if (!transaction) {
         [self remove:arr param:param];
     }else{
         NSMutableArray * ar = [NSMutableArray arrayWithCapacity:0];
         for (NSObject * obj in arr) {
-            [ar addObject:[obj saveSqlWithParam:param]];
+            [ar addObject:[obj removeSqlWithParam:param]];
         }
         [self executeSQLs:[ar copy] withTransaction:true];
     }
