@@ -8,7 +8,10 @@
 + MITDB 通过 NSObject+MitDBHandle 类来进行增删改查的操作。
 
 # 集成 MITDB
-+ 推荐：pod 'MITDB'
++ 推荐：
+```
+pod 'MITDB'
+```
 
 # 使用 MITDB
 + 简单使用
