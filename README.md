@@ -1,4 +1,10 @@
 # MITDB
+
+[![CI Status](http://img.shields.io/travis/mcmengchen/MITDB.svg?style=flat)](https://travis-ci.org/mcmengchen/MITDB)
+[![Version](https://img.shields.io/cocoapods/v/MITDB.svg?style=flat)](http://cocoapods.org/pods/MITDB)
+[![License](https://img.shields.io/cocoapods/l/MITDB.svg?style=flat)](http://cocoapods.org/pods/MITDB)
+[![Platform](https://img.shields.io/cocoapods/p/MITDB.svg?style=flat)](http://cocoapods.org/pods/MITDB)
+
 + MITDB 是对 FMDB 的二次封装，添加了 ORM 功能，数据库迁移功能和数据库加密功能。
 + MITDB 针对的是面向对象模型的数据库操作。
 + MITDB 通过 MitDBProtocal 轻量级的协议引用方式到模型中，无侵染性。
