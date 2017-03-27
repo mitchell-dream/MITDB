@@ -15,7 +15,26 @@
 #import "MitDBMigrationHandle.h"
 
 NSString * MIT_ENCRYPTKEY = @"0";
+
+
+
+@interface NSObject(MitDBHandle)
+
+/** 忽略字典属性 */
+@property(nonatomic, strong)NSMutableDictionary * ignoreDict;
+
+@end
+
 @implementation NSObject (MitDBHandle)
+
+
+-(NSMutableDictionary *)ignoreDict{
+    return objc_getAssociatedObject(self, @selector(ignoreDict));
+}
+-(void)setIgnoreDict:(NSMutableDictionary *)ignoreDict{
+    objc_setAssociatedObject(self, @selector(ignoreDict), ignoreDict, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 #pragma mark action 读取所有的表
 + (void)load{
     //获取所有的类
@@ -116,6 +135,30 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
     return @"mit_db_primary";
 }
+
+#pragma mark action 获取忽略表
++ (NSArray *)ignoreKeys{
+    if ([self instancesRespondToSelector:@selector(ignoreKeys)]) {
+        return [self ignoreKeys];
+    }
+    return nil;
+}
+
++ (BOOL)isIgnoreKey:(NSString *)key{
+    NSArray * arr = [self ignoreKeys];
+    if (arr.count==0) {
+        return false;
+    }else{
+        for (NSString * k in arr) {
+            if ([k isEqualToString:key]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+
 
 #pragma mark action 是否设置了主键
 + (BOOL)hasPrimaryKey{

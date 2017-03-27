@@ -9,5 +9,7 @@
 #import "MITDBTestModel.h"
 
 @implementation MITDBTestModel
-
++(NSArray *)ignoreKeys{
+    return @[@"name",@"age"];
+}
 @end

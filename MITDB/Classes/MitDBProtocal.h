@@ -26,6 +26,6 @@ FOUNDATION_EXTERN NSString * MIT_ENCRYPTKEY;
 
 @optional
 + (NSString *)primaryKey;
-
++ (NSArray *)ignoreKeys;
 
 @end

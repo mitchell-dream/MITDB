@@ -40,7 +40,13 @@ NSString * MIT_SQLTYPE = @"sql_type";
             [ivar_type stringByReplacingOccurrencesOfString:@"\\""" withString:@""];
             sql_type = [self changeToSqlType:ivar_type];
             if([ivar_name length] > 0 && [ivar_type length] > 0){
-                [arr addObject:@{MIT_IVARNAME:[ivar_name stringByReplacingOccurrencesOfString:@"_" withString:@""],MIT_IVARTYPE:ivar_type,MIT_SQLTYPE:sql_type}];
+                ivar_name = [ivar_name stringByReplacingOccurrencesOfString:@"_" withString:@""];
+                
+                if ([self isIgnoreKey:ivar_name]) {
+                    continue;
+                }
+                [arr addObject:@{MIT_IVARNAME:ivar_name,MIT_IVARTYPE:ivar_type,MIT_SQLTYPE:sql_type}];
+//                [arr addObject:@{MIT_IVARNAME:[ivar_name stringByReplacingOccurrencesOfString:@"_" withString:@""],MIT_IVARTYPE:ivar_type,MIT_SQLTYPE:sql_type}];
             }
         }
         free(ivars);

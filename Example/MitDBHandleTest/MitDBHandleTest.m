@@ -37,28 +37,28 @@
 }
 
 - (void)testSaveModelWithTransaction{
-    NSMutableArray * arr = [NSMutableArray arrayWithCapacity:0];
-    [self measureBlock:^{
-        for (int i = 0; i<999; i++) {
-            MITDBTestModel * mol = [MITDBTestModel new];
-            mol.name = [NSString stringWithFormat:@"%d",i];
-            mol.age = i;
-            [arr addObject:mol];
-        }
-        [MITDBTestModel save:arr param:nil inTransaction:true];
-    }];
+//    NSMutableArray * arr = [NSMutableArray arrayWithCapacity:0];
+//    [self measureBlock:^{
+//        for (int i = 0; i<999; i++) {
+//            MITDBTestModel * mol = [MITDBTestModel new];
+//            mol.name = [NSString stringWithFormat:@"%d",i];
+//            mol.age = i;
+//            [arr addObject:mol];
+//        }
+//        [MITDBTestModel save:arr param:nil inTransaction:true];
+//    }];
     
     
 }
 - (void)testSaveModelWithOutTransaction{
-    [self measureBlock:^{
-        for (int i = 0; i<999; i++) {
-            MITDBTestModel * mol = [MITDBTestModel new];
-            mol.name = [NSString stringWithFormat:@"%d",i];
-            mol.age = i;
-            [mol save];
-        }
-    }];
+//    [self measureBlock:^{
+//        for (int i = 0; i<999; i++) {
+//            MITDBTestModel * mol = [MITDBTestModel new];
+//            mol.name = [NSString stringWithFormat:@"%d",i];
+//            mol.age = i;
+//            [mol save];
+//        }
+//    }];
     
 }
 

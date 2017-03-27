@@ -18,6 +18,8 @@
 		FC6C5E6B1E594D8D006C7114 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C5E4D1E594D8D006C7114 /* main.m */; };
 		FC6C5E761E594D8D006C7114 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6C5E651E594D8D006C7114 /* ViewController.m */; };
 		FC6C5E791E59570F006C7114 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC6C5E4C1E594D8D006C7114 /* Info.plist */; };
+		FCD5AF2D1E861B0B00B02280 /* MITDBTestModelTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD5AF2C1E861B0B00B02280 /* MITDBTestModelTwo.m */; };
+		FCD5AF2F1E861C0A00B02280 /* MitDBIgnoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD5AF2E1E861C0A00B02280 /* MitDBIgnoreTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		FC6C5E4D1E594D8D006C7114 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC6C5E641E594D8D006C7114 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FC6C5E651E594D8D006C7114 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FCD5AF2B1E861B0B00B02280 /* MITDBTestModelTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITDBTestModelTwo.h; sourceTree = "<group>"; };
+		FCD5AF2C1E861B0B00B02280 /* MITDBTestModelTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITDBTestModelTwo.m; sourceTree = "<group>"; };
+		FCD5AF2E1E861C0A00B02280 /* MitDBIgnoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitDBIgnoreTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FC24E6A81E84BC9B001F9D29 /* MitDBHandleTest.m */,
+				FCD5AF2E1E861C0A00B02280 /* MitDBIgnoreTest.m */,
 				FC24E6AA1E84BC9B001F9D29 /* Info.plist */,
 			);
 			path = MitDBHandleTest;
@@ -137,6 +143,8 @@
 				FC6C5E651E594D8D006C7114 /* ViewController.m */,
 				FC24E6B01E84C27B001F9D29 /* MITDBTestModel.h */,
 				FC24E6B11E84C27B001F9D29 /* MITDBTestModel.m */,
+				FCD5AF2B1E861B0B00B02280 /* MITDBTestModelTwo.h */,
+				FCD5AF2C1E861B0B00B02280 /* MITDBTestModelTwo.m */,
 			);
 			path = MitDBDemo;
 			sourceTree = "<group>";
@@ -345,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD5AF2F1E861C0A00B02280 /* MitDBIgnoreTest.m in Sources */,
 				FC24E6A91E84BC9B001F9D29 /* MitDBHandleTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +366,7 @@
 				FC6C5E761E594D8D006C7114 /* ViewController.m in Sources */,
 				FC6C5E6B1E594D8D006C7114 /* main.m in Sources */,
 				FC6C5E661E594D8D006C7114 /* AppDelegate.m in Sources */,
+				FCD5AF2D1E861B0B00B02280 /* MITDBTestModelTwo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +550,7 @@
 				FC24E6AE1E84BC9B001F9D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC6C5DCB1E594A2A006C7114 /* Build configuration list for PBXProject "MitDB" */ = {
 			isa = XCConfigurationList;

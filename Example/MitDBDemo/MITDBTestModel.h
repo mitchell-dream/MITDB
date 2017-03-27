@@ -14,4 +14,8 @@
 @property(nonatomic, strong)NSString * name;
 /**  <#Description#>*/
 @property(nonatomic, assign)NSInteger age;
+/**  <#Description#>*/
+@property(nonatomic, strong)NSString * email;
+/**  <#Description#>*/
+@property(nonatomic, strong)NSString * psd;
 @end

@@ -20,6 +20,10 @@
 + (NSString *)primaryKey;
 //是否有主键
 + (BOOL)hasPrimaryKey;
+//忽略属性列表
++ (NSArray *)ignoreKey;
+//是否是忽略属性
++ (BOOL)isIgnoreKey:(NSString *)key;
 //数据库路径
 + (NSString *)dbPath;
 //更新加密键
