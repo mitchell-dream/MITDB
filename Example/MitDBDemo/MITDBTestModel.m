@@ -12,4 +12,7 @@
 +(NSArray *)ignoreKeys{
     return @[@"name",@"age"];
 }
++ (NSString *)primaryKey{
+    return @"uid";
+}
 @end

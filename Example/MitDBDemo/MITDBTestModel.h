@@ -18,4 +18,6 @@
 @property(nonatomic, strong)NSString * email;
 /**  <#Description#>*/
 @property(nonatomic, strong)NSString * psd;
+@property(nonatomic, strong)NSString * uid;
+
 @end

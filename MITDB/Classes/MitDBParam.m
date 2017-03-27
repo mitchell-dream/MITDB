@@ -26,6 +26,7 @@
 -(MitDBParam *(^)(NSString *))propertyName{
     return ^MitDBParam *(NSString * params){
         [self.propNameString  stringByAppendingString:params];
+        [self appendString:params];
         return self;
     };
 }
@@ -67,10 +68,13 @@
 /*
  *  行级过滤
  */
--(MitDBParam *(^)())where {
-    return ^MitDBParam *(){
-        
-        [self appendString:@" WHERE "];
+-(MitDBParam *(^)(NSString * ))where {
+    return ^MitDBParam *(NSString * param ){
+        if (param.length>0) {
+            [self appendString:[NSString stringWithFormat:@" WHERE %@",param]];
+        } else {
+            [self appendString:@" WHERE "];
+        }
         return self;
     };
 }
@@ -281,5 +285,9 @@
 - (void)appendString:(NSString *)string{
     self.conditionSql = [self.conditionSql stringByAppendingString:string];
 }
+
+
+
+
 
 @end

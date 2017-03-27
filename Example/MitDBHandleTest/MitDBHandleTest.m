@@ -62,4 +62,18 @@
     
 }
 
+
+- (void)testDefaultSearch{
+    MitDBParam * pa =[MitDBParam new];
+//    pa.where(@"name").equal(@"a").OR().propertyName(@"email").equal(@"123@qq.com");
+    pa.where(@"name").equal(@"a").AND().propertyName(@"email").equal(@"123@qq.com");
+    [MITDBTestModel selectWithParam:pa completion:^(NSArray *arr) {
+       
+        
+    }];
+
+//    pa.where().propertyNames(@[@"name",@"email"]).values(@[@"123",@"aaa"]);
+    NSLog(@"aaaaaaa = %@",pa.conditionSql);
+}
+
 @end

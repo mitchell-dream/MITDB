@@ -64,7 +64,7 @@ typedef NS_ENUM(NSUInteger, Mit_FilterType) {
 
 
 //WHERE
-- (MitDBParam *(^)( )) where;
+- (MitDBParam *(^)( NSString * _Nullable  )) where;
 //HAVING
 - (MitDBParam *(^)( )) having;
 //相等
