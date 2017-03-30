@@ -9,7 +9,10 @@ sudo gem install fastlane
 ```
 fastlane PodUpdate
 ```
-PodUpdate 用来升级pod，参数：tag：(标签) , 用法：fastlane PodUpdate tag:xxx specName:xxx
+PodUpdate 用来升级 pod 的 fastlane 脚本，
+参数：tag：标签号,
+    specName: spec 文件名称
+用法：fastlane PodUpdate tag:xxx specName:xxx
 
 ----
 
