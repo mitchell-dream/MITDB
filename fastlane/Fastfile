@@ -39,7 +39,8 @@ version_bump_podspec(path: "#{specName}.podspec", version_number: tagName)
 pod_lib_lint(verbose: true, allow_warnings: true, use_libraries: true)
 
 #9 pod push
-pod_push(path: "#{specName}.podspec", repo: "MITDB",allow_warnings: true, use_libraries:true)
+pod_push(path: "#{specName}.podspec", allow_warnings: true, use_libraries:true)
+#pod_push(path: "#{specName}.podspec", repo: "MITDB", allow_warnings: true, use_libraries:true)
 
 
 end
