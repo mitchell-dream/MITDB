@@ -1,0 +1,45 @@
+desc 'PodUpdate 用来升级pod，参数：tag：(标签) , 用法：fastlane PodUpdate tag:xxx specName:xxx'
+lane :PodUpdate do |options|
+tagName = options[:tag]
+specName = options[:specName]
+
+#1 pod install
+cocoapods(
+  clean: true,
+  podfile: "./Example/Podfile"
+)
+
+#2 git add
+git_add(path: ".")
+#3 git commit
+git_commit(path: ".", message: "版本升级")
+
+#4 git push 
+push_to_git_remote
+
+
+#5.验证 tag 是否存在，存在删除本地标签和远程标签
+if git_tag_exists(tag: tagName)
+  UI.message("标签 #{tagName} 已经存在，删除 🚀")
+  #删除本地和远程标签
+  remove_tag(tag:tagName)
+end
+
+#6 添加标签
+add_git_tag(
+tag: tagName
+)
+
+#7 重写 podspec 文件
+
+version_bump_podspec(path: "#{specName}.podspec", version_number: tagName)
+
+
+#8 pod lib lint
+pod_lib_lint(verbose: true, allow_warnings: true, use_libraries: true)
+
+#9 pod push
+pod_push(path: "#{specName}.podspec", repo: "MITDB",allow_warnings: true, use_libraries:true)
+
+
+end
