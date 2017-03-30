@@ -5,27 +5,54 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: cocoapods" time="3.436868">
+      <testcase classname="fastlane.lanes" name="0: cocoapods" time="3.042434">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: git_add" time="0.083366">
+      <testcase classname="fastlane.lanes" name="1: git_add" time="0.041267">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.041721">
+      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.041252">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: push_to_git_remote" time="9.39444">
+      <testcase classname="fastlane.lanes" name="3: push_to_git_remote" time="8.334717">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git_tag_exists" time="0.012833">
+      <testcase classname="fastlane.lanes" name="4: git_tag_exists" time="0.011877">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: git_tag_remove" time="7.067197">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: add_git_tag" time="0.014082">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: version_bump_podspec" time="0.00195">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: pod_lib_lint" time="163.400367">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: pod_push" time="71.889414">
+        
+          <failure message="/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:217:in `block in execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:213:in `chdir'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:213:in `execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:135:in `trigger_action_by_name'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;Fastfile:42:in `block in parsing_binding'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane_manager.rb:52:in `cruise_lane'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:105:in `block (2 levels) in run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:153:in `run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/runner.rb:446:in `run_active_command'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:38:in `run!'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/delegates.rb:15:in `run!'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:302:in `run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/cli_tools_distributor.rb:59:in `take_off'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/bin/fastlane:15:in `&lt;top (required)&gt;'&#10;/Users/mengchen/.fastlane/bin/bundle/bin/fastlane:22:in `load'&#10;/Users/mengchen/.fastlane/bin/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod trunk push 'MITDB.podspec' --allow-warnings --use-libraries' was 1 instead of 0.&#10;Updating spec repo `master`&#10;&#10;CocoaPods 1.2.1.beta.1 is available.&#10;To update use: `gem install cocoapods --pre`&#10;[!] This is a test version we'd love you to try.&#10;&#10;For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.2.1.beta.1&#10;&#10;Validating podspec&#10; -&gt; MITDB -&gt; MITDB (0.1.0)&#10;    - ERROR | [iOS] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/mcmengchen/MITDB.git /var/folders/w4/kn5xrqqn04bcyjv2pkqzv1qr0000gn/T/d20170330-58885-1ubechs --template= --single-branch --depth 1 --branch 0.1.0&#10;&#10;Cloning into '/var/folders/w4/kn5xrqqn04bcyjv2pkqzv1qr0000gn/T/d20170330-58885-1ubechs'...&#10;warning: Could not find remote branch 0.1.0 to clone.&#10;fatal: Remote branch 0.1.0 not found in upstream origin&#10;) during validation.&#10;&#10;[!] The spec did not pass validation, due to 1 error.&#10;" />
         
       </testcase>
     

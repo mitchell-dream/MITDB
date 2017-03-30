@@ -29,17 +29,19 @@ end
 add_git_tag(
 tag: tagName
 )
+#7 添加到服务器
+push_git_tags
 
-#7 重写 podspec 文件
-
+#8 重写 podspec 文件
 version_bump_podspec(path: "#{specName}.podspec", version_number: tagName)
 
 
-#8 pod lib lint
+#9 pod lib lint
 pod_lib_lint(verbose: true, allow_warnings: true, use_libraries: true)
 
-#9 pod push
+#10 pod trunk push 共有
 pod_push(path: "#{specName}.podspec", allow_warnings: true, use_libraries:true)
+#私有
 #pod_push(path: "#{specName}.podspec", repo: "MITDB", allow_warnings: true, use_libraries:true)
 
 
