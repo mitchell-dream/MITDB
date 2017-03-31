@@ -9,7 +9,7 @@ end
 
 target "MitDBHandleTest" do
 #    use_frameworks!
-    pod 'MITDB', :path => '../'
+#    pod 'MITDB', :path => '../'
 end
 
 target "MITDBKit" do

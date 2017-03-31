@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source       = { :git => "https://github.com/mcmengchen/MITDB.git", :tag => s.version.to_s }
   if ENV['IS_FRAMEWORK']
-  s.source_files = 'MITDB/Classes/**/*.h'
-  s.vendored_frameworks = 'MITDB/Products/MITDBKit.framework'
+    s.source_files = 'MITDB/Classes/**/*.h'
+    s.vendored_frameworks = 'MITDB/Products/MITDB.framework'
   else
-  s.source_files = 'MITDB/Classes/**/*.{h,m,cpp,mm}'
+    s.source_files = 'MITDB/Classes/**/*.{h,m,cpp,mm}'
   end
   s.frameworks = 'UIKit','AVFoundation'
   s.dependency "YYModel"
