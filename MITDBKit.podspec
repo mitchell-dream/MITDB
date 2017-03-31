@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
-  s.name         = "MITDB"
-  s.version      = "0.1.0"
-  s.summary      = "MITDB summary"
+  s.name         = "MITDBKit"
+  s.version      = "0.1.1"
+  s.summary      = "MITDBKit summary"
   s.description  = "A tool to encapsulation of the database"
   s.homepage     = "https://github.com/mcmengchen/MITDB"
   s.license      = "MIT"
@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.requires_arc = true
   s.source       = { :git => "https://github.com/mcmengchen/MITDB.git", :tag => s.version.to_s }
-  s.source_files = 'MITDB/Classes/**/*.{h,m,cpp,mm}'
+  s.source_files = 'MITDB/Classes/**/*.h'
+  s.vendored_frameworks = 'MITDB/Products/MITDBKit.framework'
   s.frameworks = 'UIKit','AVFoundation'
   s.dependency "YYModel"
   s.dependency "FMDBMigrationManager"
