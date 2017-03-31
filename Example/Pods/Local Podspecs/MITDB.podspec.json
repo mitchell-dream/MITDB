@@ -1,6 +1,6 @@
 {
   "name": "MITDB",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "MITDB summary",
   "description": "A tool to encapsulation of the database",
   "homepage": "https://github.com/mcmengchen/MITDB",
@@ -15,7 +15,7 @@
   "requires_arc": true,
   "source": {
     "git": "https://github.com/mcmengchen/MITDB.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "source_files": "MITDB/Classes/**/*.{h,m,cpp,mm}",
   "frameworks": [

@@ -11,7 +11,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.requires_arc = true
   s.source       = { :git => "https://github.com/mcmengchen/MITDB.git", :tag => s.version.to_s }
+  if ENV['IS_FRAMEWORK']
+  s.source_files = 'MITDB/Classes/**/*.h'
+  s.vendored_frameworks = 'MITDB/Products/MITDBKit.framework'
+  else
   s.source_files = 'MITDB/Classes/**/*.{h,m,cpp,mm}'
+  end
   s.frameworks = 'UIKit','AVFoundation'
   s.dependency "YYModel"
   s.dependency "FMDBMigrationManager"
