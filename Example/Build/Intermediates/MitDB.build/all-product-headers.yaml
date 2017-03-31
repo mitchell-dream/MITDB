@@ -1,0 +1,88 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/MITDBKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MITDBKit-Swift.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/MITDBKit.framework/Headers/MITDBKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MITDBKit.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/MITDBKit/MITDBKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "MitDBMigration.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBMigration.h"
+        },
+        {
+          'type': 'file',
+          'name': "MitDBMigrationHandle.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBMigrationHandle.h"
+        },
+        {
+          'type': 'file',
+          'name': "MitDBParam.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBParam.h"
+        },
+        {
+          'type': 'file',
+          'name': "MitDBProtocal.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBProtocal.h"
+        },
+        {
+          'type': 'file',
+          'name': "MitFMEncryptDatabase.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitFMEncryptDatabase.h"
+        },
+        {
+          'type': 'file',
+          'name': "MitFMEncryptDatabaseQueue.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitFMEncryptDatabaseQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "MitFMEncryptHelper.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitFMEncryptHelper.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MitDBHandle.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitDBHandle.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MitDBParam.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitDBParam.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MitEncrypt.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitEncrypt.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MitTools.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitTools.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/MITDBKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Build/Intermediates/MitDB.build/Debug-iphoneos/MITDBKit.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

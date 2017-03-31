@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MitDB.xcscheme</key>
+		<key>MITDB.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>MITDBKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>MitDB.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>FC6C5DCF1E594A2A006C7114</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCD5AF9B1E8DF81C00B02280</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCD5AFE11E8DFC3500B02280</key>
 		<dict>
 			<key>primary</key>
 			<true/>

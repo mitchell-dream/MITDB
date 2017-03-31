@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import <MITDB/MitDBProtocal.h>
+
 @interface MITDBTestModel : NSObject<MitDBProtocal>
 /**  <#Description#>*/
 @property(nonatomic, strong)NSString * name;
