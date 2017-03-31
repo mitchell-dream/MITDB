@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '563D574933E9AD10640283E7FD0C0CC2'
+               BlueprintIdentifier = '0F089E9107B1ADA4AB6AD1FF0C7075C9'
                BlueprintName = 'Pods-MitDBHandleTest'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-MitDBHandleTest.a'>

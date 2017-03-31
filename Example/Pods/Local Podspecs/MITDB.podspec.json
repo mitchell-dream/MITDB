@@ -17,7 +17,8 @@
     "git": "https://github.com/mcmengchen/MITDB.git",
     "tag": "0.1.1"
   },
-  "source_files": "MITDB/Classes/**/*.{h,m,cpp,mm}",
+  "source_files": "MITDB/Classes/**/*.h",
+  "vendored_frameworks": "MITDB/Products/MITDBKit.framework",
   "frameworks": [
     "UIKit",
     "AVFoundation"

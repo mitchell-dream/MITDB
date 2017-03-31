@@ -1,8 +1,10 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../MITDB/Products"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/FMDBMigrationManager" "${PODS_ROOT}/Headers/Public/MITDB" "${PODS_ROOT}/Headers/Public/SQLCipher" "${PODS_ROOT}/Headers/Public/YYModel"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FMDB" "$PODS_CONFIGURATION_BUILD_DIR/FMDBMigrationManager" "$PODS_CONFIGURATION_BUILD_DIR/MITDB" "$PODS_CONFIGURATION_BUILD_DIR/SQLCipher" "$PODS_CONFIGURATION_BUILD_DIR/YYModel"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FMDB" "$PODS_CONFIGURATION_BUILD_DIR/FMDBMigrationManager" "$PODS_CONFIGURATION_BUILD_DIR/SQLCipher" "$PODS_CONFIGURATION_BUILD_DIR/YYModel"
 OTHER_CFLAGS = $(inherited) -DSQLITE_HAS_CODEC -DHAVE_USLEEP=1 $(inherited) -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_THREADSAFE -DSQLCIPHER_CRYPTO_CC $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FMDB" -isystem "${PODS_ROOT}/Headers/Public/FMDBMigrationManager" -isystem "${PODS_ROOT}/Headers/Public/MITDB" -isystem "${PODS_ROOT}/Headers/Public/SQLCipher" -isystem "${PODS_ROOT}/Headers/Public/YYModel"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"FMDB" -l"FMDBMigrationManager" -l"MITDB" -l"SQLCipher" -l"YYModel" -l"sqlite3" -framework "AVFoundation" -framework "CoreFoundation" -framework "Foundation" -framework "Security" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FMDB" -l"FMDBMigrationManager" -l"SQLCipher" -l"YYModel" -l"sqlite3" -framework "AVFoundation" -framework "CoreFoundation" -framework "Foundation" -framework "MITDBKit" -framework "Security" -framework "UIKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods
