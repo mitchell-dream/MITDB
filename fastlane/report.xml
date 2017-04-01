@@ -5,57 +5,59 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: cocoapods" time="4.479483">
+      <testcase classname="fastlane.lanes" name="00: cocoapods" time="3.444281">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: git_add" time="0.049586">
+      <testcase classname="fastlane.lanes" name="01: git_add" time="0.064649">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: git_commit" time="0.073236">
+      <testcase classname="fastlane.lanes" name="02: git_commit" time="0.106108">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: push_to_git_remote" time="7.072761">
+      <testcase classname="fastlane.lanes" name="03: push_to_git_remote" time="6.869586">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: git_tag_exists" time="0.009505">
+      <testcase classname="fastlane.lanes" name="04: git_tag_exists" time="0.009721">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: git_tag_remove" time="5.201605">
+      <testcase classname="fastlane.lanes" name="05: git_tag_remove" time="6.514556">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: add_git_tag" time="0.011983">
+      <testcase classname="fastlane.lanes" name="06: add_git_tag" time="0.01231">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: push_git_tags" time="5.807766">
+      <testcase classname="fastlane.lanes" name="07: push_git_tags" time="9.19414">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: version_bump_podspec" time="0.003403">
+      <testcase classname="fastlane.lanes" name="08: version_bump_podspec" time="0.002452">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: pod_lib_lint" time="149.230991">
+      <testcase classname="fastlane.lanes" name="09: pod_lib_lint" time="188.834317">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: pod_push" time="227.70667">
+      <testcase classname="fastlane.lanes" name="10: pod_push" time="694.201698">
+        
+          <failure message="/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:217:in `block in execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:213:in `chdir'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:213:in `execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:135:in `trigger_action_by_name'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;Fastfile:46:in `block in parsing_binding'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane_manager.rb:52:in `cruise_lane'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:105:in `block (2 levels) in run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:153:in `run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/runner.rb:446:in `run_active_command'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:38:in `run!'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/delegates.rb:15:in `run!'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:302:in `run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/cli_tools_distributor.rb:59:in `take_off'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/bin/fastlane:15:in `&lt;top (required)&gt;'&#10;/Users/mengchen/.fastlane/bin/bundle/bin/fastlane:22:in `load'&#10;/Users/mengchen/.fastlane/bin/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod trunk push 'MITDB.podspec' --allow-warnings --use-libraries' was 1 instead of 0.&#10;Updating spec repo `master`&#10;&#10;CocoaPods 1.2.1.beta.1 is available.&#10;To update use: `gem install cocoapods --pre`&#10;[!] This is a test version we'd love you to try.&#10;&#10;For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.2.1.beta.1&#10;&#10;Validating podspec&#10; -&gt; MITDB -&gt; MITDB (0.1.2)&#10;    - ERROR | [iOS] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/mcmengchen/MITDB.git /var/folders/w4/kn5xrqqn04bcyjv2pkqzv1qr0000gn/T/d20170331-19409-gdtti9 --template= --single-branch --depth 1 --branch 0.1.2&#10;&#10;Cloning into '/var/folders/w4/kn5xrqqn04bcyjv2pkqzv1qr0000gn/T/d20170331-19409-gdtti9'...&#10;error: RPC failed; curl 18 transfer closed with outstanding read data remaining&#10;fatal: The remote end hung up unexpectedly&#10;fatal: early EOF&#10;fatal: index-pack failed&#10;) during validation.&#10;&#10;[!] The spec did not pass validation, due to 1 error.&#10;" />
         
       </testcase>
     

@@ -1,6 +1,0 @@
-framework module MITDBKit {
-  umbrella header "MITDBKit.h"
-
-  export *
-  module * { export * }
-}
