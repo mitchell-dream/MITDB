@@ -4,12 +4,17 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/FMDB",
+      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos",
       'contents': [
         {
           'type': 'file',
           'name': "FMDB.h",
           'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDB/src/fmdb/FMDB.h"
+        },
+        {
+          'type': 'file',
+          'name': "FMDBMigrationManager.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDBMigrationManager/Code/FMDBMigrationManager.h"
         },
         {
           'type': 'file',
@@ -35,96 +40,7 @@
           'type': 'file',
           'name': "FMResultSet.h",
           'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDB/src/fmdb/FMResultSet.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/FMDBMigrationManager",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "FMDBMigrationManager.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDBMigrationManager/Code/FMDBMigrationManager.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/MITDB",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "MitDBMigration.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBMigration.h"
         },
-        {
-          'type': 'file',
-          'name': "MitDBMigrationHandle.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBMigrationHandle.h"
-        },
-        {
-          'type': 'file',
-          'name': "MitDBParam.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBParam.h"
-        },
-        {
-          'type': 'file',
-          'name': "MitDBProtocal.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitDBProtocal.h"
-        },
-        {
-          'type': 'file',
-          'name': "MitFMEncryptDatabase.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitFMEncryptDatabase.h"
-        },
-        {
-          'type': 'file',
-          'name': "MitFMEncryptDatabaseQueue.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitFMEncryptDatabaseQueue.h"
-        },
-        {
-          'type': 'file',
-          'name': "MitFMEncryptHelper.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/MitFMEncryptHelper.h"
-        },
-        {
-          'type': 'file',
-          'name': "NSObject+MitDBHandle.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitDBHandle.h"
-        },
-        {
-          'type': 'file',
-          'name': "NSObject+MitDBParam.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitDBParam.h"
-        },
-        {
-          'type': 'file',
-          'name': "NSObject+MitEncrypt.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitEncrypt.h"
-        },
-        {
-          'type': 'file',
-          'name': "NSObject+MitTools.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Classes/NSObject+MitTools.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/SQLCipher",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "sqlite3.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/SQLCipher/sqlite3.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/YYModel",
-      'contents': [
         {
           'type': 'file',
           'name': "NSObject+YYModel.h",
@@ -139,6 +55,11 @@
           'type': 'file',
           'name': "YYModel.h",
           'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/YYModel/YYModel/YYModel.h"
+        },
+        {
+          'type': 'file',
+          'name': "sqlite3.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/SQLCipher/sqlite3.h"
         }
       ]
     }
