@@ -4,17 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos",
+      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/FMDB",
       'contents': [
         {
           'type': 'file',
           'name': "FMDB.h",
           'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDB/src/fmdb/FMDB.h"
-        },
-        {
-          'type': 'file',
-          'name': "FMDBMigrationManager.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDBMigrationManager/Code/FMDBMigrationManager.h"
         },
         {
           'type': 'file',
@@ -40,7 +35,35 @@
           'type': 'file',
           'name': "FMResultSet.h",
           'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDB/src/fmdb/FMResultSet.h"
-        },
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/FMDBMigrationManager",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FMDBMigrationManager.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/FMDBMigrationManager/Code/FMDBMigrationManager.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/SQLCipher",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "sqlite3.h",
+          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/SQLCipher/sqlite3.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/MITDB/Products/Debug-iphoneos/YYModel",
+      'contents': [
         {
           'type': 'file',
           'name': "NSObject+YYModel.h",
@@ -55,11 +78,6 @@
           'type': 'file',
           'name': "YYModel.h",
           'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/YYModel/YYModel/YYModel.h"
-        },
-        {
-          'type': 'file',
-          'name': "sqlite3.h",
-          'external-contents': "/Users/mengchen/Desktop/\u81EA\u5DF1github\u7684\u5E93/MitDB/Example/Pods/SQLCipher/sqlite3.h"
         }
       ]
     }

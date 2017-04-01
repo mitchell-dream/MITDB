@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.requires_arc = true
   s.source       = { :git => "https://github.com/mcmengchen/MITDB.git", :tag => s.version.to_s }
-  if ENV['IS_SOURCE']
+  if ENV['IS_SOURCE']==1
     s.source_files = 'MITDB/Classes/**/*.{h,m,cpp,mm}'
   else
     s.source_files = 'MITDB/Classes/**/*.h'
