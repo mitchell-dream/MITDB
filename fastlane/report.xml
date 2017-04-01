@@ -5,57 +5,9 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: cocoapods" time="3.244226">
+      <testcase classname="fastlane.lanes" name="0: cocoapods" time="1.520043">
         
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="01: git_add" time="0.514601">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="02: git_commit" time="0.47478">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="03: push_to_git_remote" time="38.456453">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="04: git_tag_exists" time="0.010546">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="05: git_tag_remove" time="5.313534">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="06: add_git_tag" time="0.011004">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="07: push_git_tags" time="6.729403">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="08: version_bump_podspec" time="0.002302">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="09: pod_lib_lint" time="20.889696">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="10: pod_push" time="68.194251">
+          <failure message="/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:217:in `block in execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:213:in `chdir'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:213:in `execute_action'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:135:in `trigger_action_by_name'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;Fastfile:10:in `block in parsing_binding'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/lane_manager.rb:52:in `cruise_lane'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:105:in `block (2 levels) in run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:153:in `run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/runner.rb:446:in `run_active_command'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:38:in `run!'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/delegates.rb:15:in `run!'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:302:in `run'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/fastlane/lib/fastlane/cli_tools_distributor.rb:59:in `take_off'&#10;/Users/mengchen/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.13.0/bin/fastlane:15:in `&lt;top (required)&gt;'&#10;/Users/mengchen/.fastlane/bin/bundle/bin/fastlane:22:in `load'&#10;/Users/mengchen/.fastlane/bin/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'cd './Example' &amp;&amp; pod install' was 1 instead of 0.&#10;Analyzing dependencies&#10;Fetching podspec for `MITDB` from `../`&#10;[!] Unable to satisfy the following requirements:&#10;&#10;- `MITDB (from `../`)` required by `Podfile`&#10;- `MITDB` required by `Podfile.lock`&#10;&#10;Specs satisfying the `MITDB (from `../`), MITDB` dependency were found, but they required a higher minimum deployment target.&#10;" />
         
       </testcase>
     
