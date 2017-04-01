@@ -6,7 +6,7 @@ PODS:
     - FMDBMigrationManager/System (= 1.4.1)
   - FMDBMigrationManager/System (1.4.1):
     - FMDB/standard (>= 2.3)
-  - MITDB (0.1.1):
+  - MITDB (0.1.3):
     - FMDB/SQLCipher
     - FMDBMigrationManager
     - YYModel
@@ -30,7 +30,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
-  MITDB: 7e559b3eab08ac205e6152297b4931b3ff66a1fa
+  MITDB: e2e53c78e998d5f39ba8776a60b5e11ac8972f8c
   SQLCipher: 4684434d5791db86512cd7e02172aefba575849e
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
