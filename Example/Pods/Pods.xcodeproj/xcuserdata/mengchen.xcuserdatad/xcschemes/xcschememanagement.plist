@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MITDB.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-MITDBKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -46,47 +41,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>018896F7A09D0A7EA34F3314A3194B4A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>0AF8D966C9F65423C5B34A6B96F3ABD4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>363D44EEF7FF36982E3A765838C33E17</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>682B558AE9A9D05EDC4BFC0A098BEF81</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>84704EE528B76D97E49B4EF4018D7CDA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>85AB1851F5A752D9C2FDF5BF39D0E9D6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C0CC97CB0351FB320710376BCF09D6A5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E717045B5451A9293C1C2D5BA968E481</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
