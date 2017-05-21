@@ -25,7 +25,30 @@ FOUNDATION_EXTERN NSString * MIT_ENCRYPTKEY;
 @protocol MitDBProtocal <NSObject>
 
 @optional
+
+/**
+ 主键
+ */
 + (NSString *)primaryKey;
+
+/**
+ 忽略键值
+ */
 + (NSArray *)ignoreKeys;
+
+/**
+ 表名数组
+ */
++ (NSArray *)tableNames;
+
+/**
+ 默认表名
+ */
++ (NSString *)defaultTableName;
+
+/**
+ 表主键映射（未完成）
+ */
++ (NSDictionary *)tablePrimaryKeyMap;
 
 @end

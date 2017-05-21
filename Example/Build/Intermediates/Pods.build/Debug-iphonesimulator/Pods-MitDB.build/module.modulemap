@@ -1,6 +1,0 @@
-framework module Pods_MitDB {
-  umbrella header "Pods-MitDB-umbrella.h"
-
-  export *
-  module * { export * }
-}

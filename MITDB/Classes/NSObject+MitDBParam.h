@@ -12,15 +12,16 @@
 @interface NSObject (MitDBParam)
 //建表
 + (NSString *)createTabSQL;
++ (NSString *)createTabSQLWithTabName:(NSString *)tabName;
 //保存
-- (NSString *)saveSqlWithParam:(MitDBParam *)param;
+- (NSString *)saveSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName;
 //修改
-- (NSString *)updateSqlWithParam:(MitDBParam *)param;
+- (NSString *)updateSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName;
 //删除
-- (NSString *)removeSqlWithParam:(MitDBParam *)param;
+- (NSString *)removeSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName;
 //清空
 - (NSString *)removeAllSql:(NSString *)tableName;
 //查询
-- (NSString *)selectSqlWithParam:(MitDBParam *)param;
+- (NSString *)selectSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName;
 
 @end

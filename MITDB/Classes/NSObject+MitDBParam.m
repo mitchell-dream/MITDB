@@ -59,13 +59,27 @@
     return sql;
 }
 
++ (NSString *)createTabSQLWithTabName:(NSString *)tabName{
+    if (!tabName||tabName.length==0) {
+        return nil;
+    }
+    NSArray * arr = [self getAllPropertysFromClass];
+    NSString * sql = [NSString stringWithFormat:@"create table if not exists %@ %@",tabName,[self createSQLWithParamArr:arr]];
+    return sql;
+}
+
 #pragma mark action 存储语句
-- (NSString *)saveSqlWithParam:(MitDBParam *)param{
+- (NSString *)saveSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName{
     NSArray * arr = [[self class] getAllPropertysFromClass];
     if (!(arr.count>0)) {
         return nil;
     }
-    NSString * sql = [NSString stringWithFormat:@"INSERT OR REPLACE INTO %@",[[self class] tableName]];
+    NSString * sql = nil;
+    if (tabName &&tabName.length>0) {
+       sql = [NSString stringWithFormat:@"INSERT OR REPLACE INTO %@",tabName];
+    } else {
+        sql = [NSString stringWithFormat:@"INSERT OR REPLACE INTO %@",[[self class] tableName]];
+    }
     NSMutableArray * keys  = [NSMutableArray array];
     NSMutableArray * values = [NSMutableArray array];
     NSString * key = nil;
@@ -132,12 +146,18 @@
 
 
 #pragma mark action 删除语句
--(NSString *)removeSqlWithParam:(MitDBParam *)param{
+-(NSString *)removeSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName{
     NSArray * arr = [[self class] getAllPropertysFromClass];
     if (!(arr.count>0)) {
         return nil;
     }
-    NSString * sql = [NSString stringWithFormat:@"DELETE FROM %@ ",[[self class] tableName]];
+    NSString * sql = nil;
+    if (tabName&&tabName.length>0) {
+        sql = [NSString stringWithFormat:@"DELETE FROM %@ ",tabName];
+    } else {
+        sql = [NSString stringWithFormat:@"DELETE FROM %@ ",[[self class] tableName]];
+
+    }
     if (!param) {
         //没有条件，拼接主键
         //是否有自己设置的主键
@@ -164,12 +184,17 @@
 
 
 #pragma mark action 更新
-- (NSString *)updateSqlWithParam:(MitDBParam *)param{
+- (NSString *)updateSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName{
     NSArray * arr = [[self class] getAllPropertysFromClass];
     if (!(arr.count>0)) {
         return nil;
     }
-    NSString * sql = [NSString stringWithFormat:@"UPDATE %@ SET ",[[self class] tableName]];
+    NSString * sql = nil;
+    if (tabName&&tabName.length>0) {
+        sql = [NSString stringWithFormat:@"UPDATE %@ SET ",tabName];
+    } else {
+        sql = [NSString stringWithFormat:@"UPDATE %@ SET ",[[self class] tableName]];
+    }
     if (!param) {
         //无参数
         __block NSMutableArray * keys  = [NSMutableArray array];
@@ -243,19 +268,19 @@
 
 
 #pragma mark action 查询语句
-- (NSString *)selectSqlWithParam:(MitDBParam *)param{
+- (NSString *)selectSqlWithParam:(MitDBParam *)param tabName:(NSString *)tabName{
     NSArray * arr = [[self class] getAllPropertysFromClass];
     if (!(arr.count>0)) {
         return nil;
     }
     NSString * sql = @"SELECT";
+    NSString * tableName = (tabName&&tabName.length>0)?tabName:([[self class]tableName]);
     if (!param) {
         //没参数 全查
-        sql = [sql stringByAppendingString:[NSString stringWithFormat:@"* FROM %@;",[[self class] tableName]]];
+        sql = [sql stringByAppendingString:[NSString stringWithFormat:@"* FROM %@;",tableName]];
     } else {
-        sql = [sql stringByAppendingString:[NSString stringWithFormat:@"%@FROM %@",param.propertyNames,[[self class] tableName]]];
+        sql = [sql stringByAppendingString:[NSString stringWithFormat:@"%@FROM %@",param.propertyNames,tableName]];
         sql = [sql stringByAppendingString:[NSString stringWithFormat:@"%@;",param.conditionSql]];
-        
     }
     return sql;
 }

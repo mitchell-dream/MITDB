@@ -152,9 +152,37 @@ NSString * MIT_SQLTYPE = @"sql_type";
 
 #pragma mark action 获取列表名称
 + (NSString *)tableName{
+    NSString * tb_name = nil;
+    //查看是否实现了协议中默认名称方法
+    tb_name = [self defaultTableName];
+    if (!tb_name||tb_name.length == 0 ) {
+        //如果没有实现，查看是否实现了表数组方法
+        NSArray * arr = [self tableNames];
+        if (arr&&arr.count>0) {
+            tb_name = [arr firstObject];
+        }
+    }
+    if (!tb_name||tb_name.length == 0) {
+        tb_name = [self mit_defaultTableName];
+    }
+    return tb_name;
+}
+
+#pragma mark action 设置默认表名
++ (NSString *)mit_defaultTableName{
     NSString * tb_name = NSStringFromClass([self class]);
     tb_name = [NSString stringWithFormat:@"mitdb_%@",tb_name];
     return tb_name;
+}
+
+
+#pragma mark ------------------ 协议方法 ------------------
++ (NSString *)defaultTableName{
+    return nil;
+}
+
++ (NSArray *)tableNames{
+    return nil;
 }
 
 @end

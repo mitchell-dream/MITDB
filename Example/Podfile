@@ -1,22 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, "8.0"
+use_frameworks!
 
-target "MitDB" do
+target "PROJECT_Example" do
 #    use_frameworks!
     pod 'MITDB', :path => '../'
 
 end
-
-target "MitDBHandleTest" do
-#    use_frameworks!
-#    pod 'MITDB', :path => '../'
-end
-
-target "MITDBKit" do
-    #    use_frameworks!
-#    pod 'MITDB', :path => '../'
-    pod "YYModel"
-    pod "FMDBMigrationManager"
-    pod "FMDB/SQLCipher"
-end
-

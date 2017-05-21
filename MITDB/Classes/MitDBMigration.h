@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FMDBMigrationManager.h"
+#import <FMDBMigrationManager/FMDBMigrationManager.h>
 @interface MitDBMigration : NSObject<FMDBMigrating>
 
 @property (nonatomic, readonly) NSString *name;
