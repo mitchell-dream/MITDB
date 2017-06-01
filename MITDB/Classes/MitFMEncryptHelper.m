@@ -7,7 +7,12 @@
 //
 
 #import "MitFMEncryptHelper.h"
+//#import "sqlite3.h"
+#if __has_include(<sqlite3.h>)
+#import <sqlite3.h>
+#else
 #import "sqlite3.h"
+#endif
 #import "MitFMEncryptDatabase.h"
 #import "NSObject+MitDBHandle.h"
 

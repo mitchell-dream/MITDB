@@ -8,74 +8,74 @@
 
 /* Begin PBXBuildFile section */
 		04AB8A9D7F5DB67A5273D1AC958ADB03 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C5A45B1468BB1492709D4EF2211AF8 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A2A0734752CB55B0D396BF8154E7DB0 /* NSObject+MitDBHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 883E76DA61E89B5CC1CD63E7903B8D32 /* NSObject+MitDBHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A2A0734752CB55B0D396BF8154E7DB0 /* NSObject+MitDBHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0003AA5EBE8C6F77D6E21BD5E38E3C /* NSObject+MitDBHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B93CF4AFC13DD5198845173B69B8C33 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 806A5198AD3D3A32D45C0A8BB42AA617 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		0CB2992E4BE1CF942E2F27581EF416CE /* MitFMEncryptHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC7627D44478A8FD0B5400E13779214 /* MitFMEncryptHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E08AAD2BE52363FA43B7185A7F9ECE5 /* MitDBMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = B2EF10FF09E4477A653429EA23E08A12 /* MitDBMigration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E814D79C18C5F96750CBD8BC64ECCC0 /* NSObject+MitTools.h in Headers */ = {isa = PBXBuildFile; fileRef = CECC6D6173B6CE33921AFDEB83E80129 /* NSObject+MitTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22B44AE103DA5A78465CD513AE846E92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */; };
+		0CB2992E4BE1CF942E2F27581EF416CE /* MitFMEncryptHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB4BD035ACB6D24365AD73C77425B55 /* MitFMEncryptHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E08AAD2BE52363FA43B7185A7F9ECE5 /* MitDBMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB1C85B94C585219DF13A2454E0BCC1 /* MitDBMigration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		103F13C0744EC63C954E8916339EC35F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */; };
+		1B85825037042B6420F91634CD7594E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9BC4795250BB2FEC04BB63E954E509 /* Security.framework */; };
+		1E814D79C18C5F96750CBD8BC64ECCC0 /* NSObject+MitTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED68DC9DBD4031CA0ED009B6E8473E1 /* NSObject+MitTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		233D6C78DCB3518FEE2BD582CC94DB46 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8338EF5646186F26AACFABB95D8A0F2B /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26E57A269B83FD7130BAA688AC62B28B /* MitDBMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = 81352B50C68AF880C1E733715FE71851 /* MitDBMigration.m */; };
+		243F3F6390224BC8BA12B6D31D137470 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFE9C99A58437D418745D1AC79C8C90 /* CoreFoundation.framework */; };
+		26E57A269B83FD7130BAA688AC62B28B /* MitDBMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = C62C63E61F50C77C22D3FCF2C4CA896B /* MitDBMigration.m */; };
 		27F9993788A1A3D31F303C3E7B56CA70 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1621065348380F114CFAF4DDE9189B1F /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D014487C0C9EADF5391F57173784491 /* FMDBMigrationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C519AA53240C5B8CCC9EBB82BBA6F2AE /* FMDBMigrationManager-dummy.m */; };
 		310403883CBB9370D0A8AE11E13D7325 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F971CD5BA889AE4B57B1D9A6B555AA /* NSObject+YYModel.m */; };
 		393A8D77DB66C0A8B125C563F6104D34 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A46AF2031C8B6832BE9C88782782E1 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		3A3121E3F26F1070514021FED6879028 /* MitDBParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DF82E4E399FBA17535522183E79EAD /* MitDBParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A3121E3F26F1070514021FED6879028 /* MitDBParam.h in Headers */ = {isa = PBXBuildFile; fileRef = C49634E7F7AC9C9065CB6F3AFBD21E51 /* MitDBParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		410BFBD8B5AEC53B057A12E6E38A8AFA /* SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F34DABC67E245E651844B39CC777043 /* SQLCipher-dummy.m */; };
 		436A00A386FB371B7B951C90FFEEB850 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 367AC30EF9E642548A3BBF63E11131A3 /* YYModel-dummy.m */; };
-		4BBBB58032C21DAF18C666B5D7FE15C6 /* MitDBMigrationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F2521220F730C31F6D90C0F9908A30 /* MitDBMigrationHandle.m */; };
-		4D41B7E7224338C58D6A87DEE2E88F16 /* MitDBParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C1F018CA2F8DBCB8C34E26E0240AFE /* MitDBParam.m */; };
+		48BD4B5CC5AE875F01CA8E595D985500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */; };
+		4BBBB58032C21DAF18C666B5D7FE15C6 /* MitDBMigrationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A76BA79D7B8CDAF622711E28B870AF /* MitDBMigrationHandle.m */; };
+		4D41B7E7224338C58D6A87DEE2E88F16 /* MitDBParam.m in Sources */ = {isa = PBXBuildFile; fileRef = A88C9A7A220E4A7B0A8EDEFD8CA8B374 /* MitDBParam.m */; };
 		521A09FEA98DB95A1C12D594AA55165E /* Pods-PROJECT_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 819C38BF5D2B2A7B896B0260BB8A2FD1 /* Pods-PROJECT_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		527C074FA57898E9E28D407905B71F66 /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 570885677A278D94D467B902FB14A82D /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52D97A0E2F1BA753DD9AF011D74A4105 /* NSObject+MitTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DC94A61269AC33489BE86A161F7C52 /* NSObject+MitTools.m */; };
-		52EF6A3B792EF4DB975FC233DDB91EB4 /* MITDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE4EA852CD9590A5D10CA64EFD689B0 /* MITDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52D97A0E2F1BA753DD9AF011D74A4105 /* NSObject+MitTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D9175F99228364403F06D4CA4BC517 /* NSObject+MitTools.m */; };
+		52EF6A3B792EF4DB975FC233DDB91EB4 /* MITDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7A67971FC89594F3FB6D2F2D750251 /* MITDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53F11DB290FD6D468AB3F9CA906A861A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD1F74F4C9B6CBEED389AE7E0176DB9 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
 		57CEFE7496858BAC1090A07075CA441A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3B79AA62D36F2AD12D2FC40F191E57 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
+		5ECE2AD7A2AE5CD45A2289BCAD2C224C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFDAE496FB8B1D4BD9BE35BCEA21A06 /* UIKit.framework */; };
 		629379140926BEEF6B3625D57E52F139 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 636816F7E55A694F2DC9ECCAA87F0A50 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		656B01534216121ED221E98629E3EA5E /* FMDBMigrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C182AE473D3B44ABB5638A3829226D04 /* FMDBMigrationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C535FCCFDEE618396EA2B1FFE02FD89 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AFBD1592E6BE9A4EEFF1E05E5BB75A /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		6E386F28678F13CA2D72E31DFE2F4DAF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3125C67B9875BDC8DFF203A759C9A020 /* Security.framework */; };
-		7180931603255B075403A1F78100204E /* MitFMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2890B13BE9EACE325928CB7B79807E /* MitFMEncryptDatabase.m */; };
+		7180931603255B075403A1F78100204E /* MitFMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 368BFFA47E764DEFE5F05592AA442701 /* MitFMEncryptDatabase.m */; };
 		73DF7C2432CFAA6093A09B5A0B66BA8C /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7608D3E47AC1F943B425EF724E8B74E /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74B0D0F049EA89415B1F199BBD9350C1 /* MitDBMigrationHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9E74BA077F7E1343AEC5A4AED37E26 /* MitDBMigrationHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75C2EC60AD7D9E9FDF5FE7EF070FC8F5 /* MitFMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040451D33F9EDC55A8FDD04DB725E3F /* MitFMEncryptHelper.m */; };
-		7CAC0860C632B09E10E66D47B4295C30 /* MitFMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F56488E2A7B3B2BDC95FFD366349514 /* MitFMEncryptDatabaseQueue.m */; };
+		74B0D0F049EA89415B1F199BBD9350C1 /* MitDBMigrationHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2969BAF915F0467CA3FBC27B9E76FC02 /* MitDBMigrationHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C2EC60AD7D9E9FDF5FE7EF070FC8F5 /* MitFMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5FC3C5D235276AC599D20399C1E1FF /* MitFMEncryptHelper.m */; };
+		7CAC0860C632B09E10E66D47B4295C30 /* MitFMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 370ADD6E95396B4AA31486CEA46030E8 /* MitFMEncryptDatabaseQueue.m */; };
 		7D6EB185509738280CD4C8BC5340A6C4 /* FMDBMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4B24ECDC497641C3A0088CCC0D284 /* FMDBMigrationManager.m */; };
-		847E46DAF7F2F89AF2941F22AB1EE356 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64AF71E6328271DCEDF8E7533D898789 /* CoreFoundation.framework */; };
 		86DA5E42F1EC95B92D7CE5BCF349FDEF /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B993A73682323C617E6D0D0CB2804810 /* YYClassInfo.m */; };
-		8AE5C31C44ABD66F4AC9C02EC5015A8C /* NSObject+MitDBParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FD05C98F6F003317209B179CCA47ED /* NSObject+MitDBParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AE5C31C44ABD66F4AC9C02EC5015A8C /* NSObject+MitDBParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 087902AA4F5F7CB6C1457D7E7D5897E5 /* NSObject+MitDBParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9211A294E113945ED4483FD9F2C589D2 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = A71F47EDE0E74C8C12630AB101264711 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B00CC006031E69E28AD3A024BDA6132 /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752C91AA765CF6488B23F4A6208C01B5 /* SQLCipher.framework */; };
-		9C547B5312AD1DEA67D3387ADA8F5149 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D184F9AD569AF4CC0BBE1F88D6CEFB0 /* AVFoundation.framework */; };
 		A05FDC342FC539DC9AD6D32E8FA1CB3D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4929E4A05F13A2EBCEF0BDAD8B62F1 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0C175A9E5B75DF54F2BC8997163721B /* MITDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CD617326949C83E48257BB43593FE4 /* MITDB-dummy.m */; };
-		A34343F2212557C7C5B96A070C4181F6 /* NSObject+MitDBHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C4E163FA9DF7562B49D2022C96F1D2 /* NSObject+MitDBHandle.m */; };
-		AB60BD80206ABD8CF1591D7B4774D324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */; };
-		ACAD010881D9B838AB91C109858593FE /* MitDBProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = 64752855E01986D27E1481F74D4DDF3E /* MitDBProtocal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0C175A9E5B75DF54F2BC8997163721B /* MITDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6911C364B5BEF6ACFEDCFA4B54C8EC /* MITDB-dummy.m */; };
+		A34343F2212557C7C5B96A070C4181F6 /* NSObject+MitDBHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF142BBBA4C924C808A6F50F8E9F6D3 /* NSObject+MitDBHandle.m */; };
+		ACAD010881D9B838AB91C109858593FE /* MitDBProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = AD23712234CC0A38BA897EA12001B12D /* MitDBProtocal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B07CD2AB5B2D77D5253474C6EAE22100 /* YYModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230E41D6EE05CC596496E1B865FD685 /* YYModel.framework */; };
 		B1F0D98ED33A2036B6A43CB65FE91E60 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D95A6B8144B120FA02AA1B3230591E4E /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B45E6B502B99F6E9EFECF80C8ACA5E69 /* Pods-PROJECT_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF20D7991A4BC047C9E12D5BD565D0EB /* Pods-PROJECT_Example-dummy.m */; };
-		B5B70B13B07543D2E9B38BBB38B99A29 /* MitFMEncryptDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AFCA6C4787DD02C96A394B2E2A98DC /* MitFMEncryptDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B70B13B07543D2E9B38BBB38B99A29 /* MitFMEncryptDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 430D70EACFDE98F67DB851AD518CEB47 /* MitFMEncryptDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B78AF711DBF23B0A3318E10EE4720BEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */; };
 		B7A54B8A24F44193A4D49BBF38352F8E /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA4D306C73A81B7192D3B9E1A4AABDC /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB4BBA7AF24F2BE546AB77B32E9D6853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */; };
 		C041B165CEA389AAF055F90BE74F82A7 /* FMDBMigrationManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 420F614B359F9878BFDB11AE7C93FFD5 /* FMDBMigrationManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C24C470DA674BC501A0A7E5375DA1A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */; };
-		C380C73B66DAA6C9BBC60B9195F0E215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */; };
-		C7D9CBC6C833F1FC6B56CD701485D062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */; };
-		C812E677CCFDCD9473BC4E71A9B8808A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E682352EA5B2D90ADBC162D9232070 /* UIKit.framework */; };
-		CDD1B0DAB5B30E8B720E263C0E0A499B /* NSObject+MitEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4034FD194E7D0952A1DCCBFA456CBA1B /* NSObject+MitEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1DB7054E6572B280BBD892F1AA7CF58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */; };
+		CDD1B0DAB5B30E8B720E263C0E0A499B /* NSObject+MitEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F0F56794F68D9F551F6D3C52EBEDAF2 /* NSObject+MitEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2FCFD47E32E6433C9191C5A56C0DA23 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7574891797ABB064B0B7130ACCB979AC /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF9B1CE233CBFDE9BDA67C2B4D0716D5 /* SQLCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752C91AA765CF6488B23F4A6208C01B5 /* SQLCipher.framework */; };
-		E03D6B390EB49461C628F681AC5247E6 /* NSObject+MitDBParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3CEB6248309FF1003437A0A06DB88 /* NSObject+MitDBParam.m */; };
-		E2BF23E3394801A601518B39D4B11D74 /* MitFMEncryptDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = BA326EC793A134974105AA95C64B7755 /* MitFMEncryptDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E03D6B390EB49461C628F681AC5247E6 /* NSObject+MitDBParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B4AA6D76B0783E5019B64292C4BCD /* NSObject+MitDBParam.m */; };
+		E2BF23E3394801A601518B39D4B11D74 /* MitFMEncryptDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 68112DF00D12E2BFFA66227E652C5563 /* MitFMEncryptDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E44F97C8FB885841C3582565F8319933 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2261CA9BD16E773BF1E3F005D07F1C6B /* FMDB-dummy.m */; };
 		E4867866E0E4BADB0307791CC2203FF6 /* FMDBMigrationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91D8A5E55B426C1A96195032C051558 /* FMDBMigrationManager.framework */; };
+		E742EBD1D2B4B7F17E5C6D96AF5B878E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4359E78D6F1FD29DEAE9C59D1F6AF78 /* AVFoundation.framework */; };
 		EF9F40443C15572746E75480496354F1 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C4254BA8E54707C93EE0C498F36121 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F02B530E0A4D7C16533A2BC37D553C9D /* NSObject+MitEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = E0671ACAF982D2A77BBE4A7DDDE3DA3C /* NSObject+MitEncrypt.m */; };
+		F02B530E0A4D7C16533A2BC37D553C9D /* NSObject+MitEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CB814EC2D23D71D1B2093D98FCB843E6 /* NSObject+MitEncrypt.m */; };
 		F11C74DF33766CF0C96784D4B429D0DE /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30369EF63CCBF5B816B969336C3563C /* FMDB.framework */; };
 		F36CF0B4724B7D4F6710275CC006CB57 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D43C4FAA80F42DF1028F95774A83585C /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4849CE4E40AB14C0A629ED01C852258 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = FEE2C60D9A770D9535275BBCEC25FC34 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DNDEBUG -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -fno-objc-arc"; }; };
+		F9F9FA6A534DAC14F8571B36B2ABB725 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */; };
 		FD13B3175DBC3BAB304BF127117E0915 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30369EF63CCBF5B816B969336C3563C /* FMDB.framework */; };
+		FECA14E697A436DA51C8280F9FEAB07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,83 +160,84 @@
 
 /* Begin PBXFileReference section */
 		0444FCCB43D704E56525DC68AF41FE6F /* FMDBMigrationManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDBMigrationManager.xcconfig; sourceTree = "<group>"; };
+		087902AA4F5F7CB6C1457D7E7D5897E5 /* NSObject+MitDBParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitDBParam.h"; sourceTree = "<group>"; };
+		0A7A67971FC89594F3FB6D2F2D750251 /* MITDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MITDB-umbrella.h"; sourceTree = "<group>"; };
 		0B0A6B63D1737EF5BD7D3204801B3832 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B5574C255482AEC9697C170D9A1123E /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YYModel.modulemap; sourceTree = "<group>"; };
 		0C2ED278A77EB9404000353AFD00BCB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1621065348380F114CFAF4DDE9189B1F /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
 		180063031923215CD9A9B803CD3A4154 /* SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLCipher.xcconfig; sourceTree = "<group>"; };
+		1A6911C364B5BEF6ACFEDCFA4B54C8EC /* MITDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MITDB-dummy.m"; sourceTree = "<group>"; };
 		2190E1B53C8E6AE5829C41EA93B44940 /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
 		2261CA9BD16E773BF1E3F005D07F1C6B /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
-		24C3CEB6248309FF1003437A0A06DB88 /* NSObject+MitDBParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitDBParam.m"; sourceTree = "<group>"; };
 		25704E61CE80EDA69E11DEF824405E62 /* FMDBMigrationManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FMDBMigrationManager.modulemap; sourceTree = "<group>"; };
-		26C1F018CA2F8DBCB8C34E26E0240AFE /* MitDBParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitDBParam.m; sourceTree = "<group>"; };
-		29FD05C98F6F003317209B179CCA47ED /* NSObject+MitDBParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitDBParam.h"; sourceTree = "<group>"; };
-		2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3040451D33F9EDC55A8FDD04DB725E3F /* MitFMEncryptHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitFMEncryptHelper.m; sourceTree = "<group>"; };
-		3125C67B9875BDC8DFF203A759C9A020 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		31DF82E4E399FBA17535522183E79EAD /* MitDBParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBParam.h; sourceTree = "<group>"; };
+		27D9175F99228364403F06D4CA4BC517 /* NSObject+MitTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitTools.m"; sourceTree = "<group>"; };
+		2969BAF915F0467CA3FBC27B9E76FC02 /* MitDBMigrationHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBMigrationHandle.h; sourceTree = "<group>"; };
 		367AC30EF9E642548A3BBF63E11131A3 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		368BFFA47E764DEFE5F05592AA442701 /* MitFMEncryptDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitFMEncryptDatabase.m; sourceTree = "<group>"; };
+		370ADD6E95396B4AA31486CEA46030E8 /* MitFMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitFMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
 		37AFBD1592E6BE9A4EEFF1E05E5BB75A /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		39A46AF2031C8B6832BE9C88782782E1 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		3E2890B13BE9EACE325928CB7B79807E /* MitFMEncryptDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitFMEncryptDatabase.m; sourceTree = "<group>"; };
-		3FC7627D44478A8FD0B5400E13779214 /* MitFMEncryptHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitFMEncryptHelper.h; sourceTree = "<group>"; };
-		4034FD194E7D0952A1DCCBFA456CBA1B /* NSObject+MitEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitEncrypt.h"; sourceTree = "<group>"; };
 		420F614B359F9878BFDB11AE7C93FFD5 /* FMDBMigrationManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDBMigrationManager-umbrella.h"; sourceTree = "<group>"; };
 		422BC11F5288893310800606D3637AE9 /* Pods-PROJECT_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PROJECT_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		44F2521220F730C31F6D90C0F9908A30 /* MitDBMigrationHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitDBMigrationHandle.m; sourceTree = "<group>"; };
+		430D70EACFDE98F67DB851AD518CEB47 /* MitFMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitFMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
+		46A76BA79D7B8CDAF622711E28B870AF /* MitDBMigrationHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitDBMigrationHandle.m; sourceTree = "<group>"; };
+		4F0F56794F68D9F551F6D3C52EBEDAF2 /* NSObject+MitEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitEncrypt.h"; sourceTree = "<group>"; };
 		52F971CD5BA889AE4B57B1D9A6B555AA /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		56C978A030902772857DB2F237AABD77 /* Pods-PROJECT_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PROJECT_Example.modulemap"; sourceTree = "<group>"; };
 		570885677A278D94D467B902FB14A82D /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
+		5D5FC3C5D235276AC599D20399C1E1FF /* MitFMEncryptHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitFMEncryptHelper.m; sourceTree = "<group>"; };
+		60BA40AF56574C055133D3780D5618F6 /* MITDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MITDB.modulemap; sourceTree = "<group>"; };
+		6317E3E07F98A491A19B2EE6BE94CF14 /* MITDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MITDB-prefix.pch"; sourceTree = "<group>"; };
 		636816F7E55A694F2DC9ECCAA87F0A50 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		636EEB292AF9B2ABABEE9D629137C2D5 /* Pods-PROJECT_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PROJECT_Example-frameworks.sh"; sourceTree = "<group>"; };
-		64752855E01986D27E1481F74D4DDF3E /* MitDBProtocal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBProtocal.h; sourceTree = "<group>"; };
-		64AF71E6328271DCEDF8E7533D898789 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		6D184F9AD569AF4CC0BBE1F88D6CEFB0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		68112DF00D12E2BFFA66227E652C5563 /* MitFMEncryptDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitFMEncryptDatabase.h; sourceTree = "<group>"; };
 		6D4929E4A05F13A2EBCEF0BDAD8B62F1 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 		6D6415B3EB6DA937FEF883D8019B10B7 /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLCipher.modulemap; sourceTree = "<group>"; };
-		6F56488E2A7B3B2BDC95FFD366349514 /* MitFMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitFMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
 		6F66C1C2DA847F9C2531A9334837E083 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73C68A15C6435C3C129C0C526EEE517E /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FMDB.modulemap; sourceTree = "<group>"; };
-		73DC94A61269AC33489BE86A161F7C52 /* NSObject+MitTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitTools.m"; sourceTree = "<group>"; };
 		746C071476FDF8349DA4781E48F22147 /* Pods-PROJECT_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PROJECT_Example.release.xcconfig"; sourceTree = "<group>"; };
 		752C91AA765CF6488B23F4A6208C01B5 /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7574891797ABB064B0B7130ACCB979AC /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		78AFCA6C4787DD02C96A394B2E2A98DC /* MitFMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitFMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
 		7DC6235BF7C154BFF857099E176BF27F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB4BD035ACB6D24365AD73C77425B55 /* MitFMEncryptHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitFMEncryptHelper.h; sourceTree = "<group>"; };
 		806A5198AD3D3A32D45C0A8BB42AA617 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		80BB80AE65659C2F348E79792B2CC69C /* MITDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MITDB.xcconfig; sourceTree = "<group>"; };
 		80C5A45B1468BB1492709D4EF2211AF8 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		81352B50C68AF880C1E733715FE71851 /* MitDBMigration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitDBMigration.m; sourceTree = "<group>"; };
 		819C38BF5D2B2A7B896B0260BB8A2FD1 /* Pods-PROJECT_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PROJECT_Example-umbrella.h"; sourceTree = "<group>"; };
 		8338EF5646186F26AACFABB95D8A0F2B /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
-		883E76DA61E89B5CC1CD63E7903B8D32 /* NSObject+MitDBHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitDBHandle.h"; sourceTree = "<group>"; };
 		89ACC85EDDF11E445AAD6DD6B795FE39 /* FMDBMigrationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDBMigrationManager.framework; path = FMDBMigrationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE4EA852CD9590A5D10CA64EFD689B0 /* MITDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MITDB-umbrella.h"; sourceTree = "<group>"; };
 		8DB4B24ECDC497641C3A0088CCC0D284 /* FMDBMigrationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDBMigrationManager.m; path = Code/FMDBMigrationManager.m; sourceTree = "<group>"; };
+		8E0003AA5EBE8C6F77D6E21BD5E38E3C /* NSObject+MitDBHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitDBHandle.h"; sourceTree = "<group>"; };
+		8E8B4AA6D76B0783E5019B64292C4BCD /* NSObject+MitDBParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitDBParam.m"; sourceTree = "<group>"; };
 		8F34DABC67E245E651844B39CC777043 /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9897875E575DC9AA16218BF072091062 /* Pods-PROJECT_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PROJECT_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		98BEA1F6CC9F150C316F8135EF787A6D /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
 		99590BD2FFA7402CB9C2722C3DBA46AC /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED68DC9DBD4031CA0ED009B6E8473E1 /* NSObject+MitTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitTools.h"; sourceTree = "<group>"; };
 		A462550630473BF91BB1CE70D1E1A62B /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
 		A4DF3F5C1F50809512D0A7316B79065B /* SQLCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLCipher.framework; path = SQLCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A519B96B6D2F324C9D27672BACE9BA13 /* MITDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MITDB-prefix.pch"; sourceTree = "<group>"; };
 		A71F47EDE0E74C8C12630AB101264711 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		A8C4E163FA9DF7562B49D2022C96F1D2 /* NSObject+MitDBHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitDBHandle.m"; sourceTree = "<group>"; };
+		A88BDFAE954E2B8D7A8D2DE17547AC29 /* MITDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MITDB.xcconfig; sourceTree = "<group>"; };
+		A88C9A7A220E4A7B0A8EDEFD8CA8B374 /* MitDBParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitDBParam.m; sourceTree = "<group>"; };
 		AA2FEC2AC1A1AC7FE6DA61615B14F2D0 /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB1C85B94C585219DF13A2454E0BCC1 /* MitDBMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBMigration.h; sourceTree = "<group>"; };
+		AD23712234CC0A38BA897EA12001B12D /* MitDBProtocal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBProtocal.h; sourceTree = "<group>"; };
 		AE6B3B608C2291F79C03E0B4E36D069E /* Pods-PROJECT_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PROJECT_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AF8FBC8D38A38B48D000DA66CC38BE44 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B14E23DC98620923B5566570BE10FD12 /* MITDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MITDB.modulemap; sourceTree = "<group>"; };
-		B2EF10FF09E4477A653429EA23E08A12 /* MitDBMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBMigration.h; sourceTree = "<group>"; };
+		AEFE9C99A58437D418745D1AC79C8C90 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		B73E9EE94DA8753E30DA770FB93876A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B993A73682323C617E6D0D0CB2804810 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
-		BA326EC793A134974105AA95C64B7755 /* MitFMEncryptDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitFMEncryptDatabase.h; sourceTree = "<group>"; };
 		BBD1F74F4C9B6CBEED389AE7E0176DB9 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
 		C182AE473D3B44ABB5638A3829226D04 /* FMDBMigrationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDBMigrationManager.h; path = Code/FMDBMigrationManager.h; sourceTree = "<group>"; };
+		C4359E78D6F1FD29DEAE9C59D1F6AF78 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C49634E7F7AC9C9065CB6F3AFBD21E51 /* MitDBParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBParam.h; sourceTree = "<group>"; };
 		C519AA53240C5B8CCC9EBB82BBA6F2AE /* FMDBMigrationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDBMigrationManager-dummy.m"; sourceTree = "<group>"; };
+		C62C63E61F50C77C22D3FCF2C4CA896B /* MitDBMigration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitDBMigration.m; sourceTree = "<group>"; };
 		CACD897B65DD12FB08999A53720A67C4 /* FMDBMigrationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDBMigrationManager-prefix.pch"; sourceTree = "<group>"; };
+		CB814EC2D23D71D1B2093D98FCB843E6 /* NSObject+MitEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitEncrypt.m"; sourceTree = "<group>"; };
 		CC3B79AA62D36F2AD12D2FC40F191E57 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		CECC6D6173B6CE33921AFDEB83E80129 /* NSObject+MitTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitTools.h"; sourceTree = "<group>"; };
+		CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFF142BBBA4C924C808A6F50F8E9F6D3 /* NSObject+MitDBHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitDBHandle.m"; sourceTree = "<group>"; };
 		D2718421AA34FE9CD8437C1269BA563F /* MITDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MITDB.framework; path = MITDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43C4FAA80F42DF1028F95774A83585C /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		D52C6926A2E245BC9F65CD5CF7E5FF8F /* Pods-PROJECT_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PROJECT_Example-resources.sh"; sourceTree = "<group>"; };
@@ -244,17 +245,16 @@
 		D91D8A5E55B426C1A96195032C051558 /* FMDBMigrationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDBMigrationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95A6B8144B120FA02AA1B3230591E4E /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
 		DA7775C01BFA1CA65B6A1101846DA280 /* Pods_PROJECT_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PROJECT_Example.framework; path = "Pods-PROJECT_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0671ACAF982D2A77BBE4A7DDDE3DA3C /* NSObject+MitEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitEncrypt.m"; sourceTree = "<group>"; };
+		DC9BC4795250BB2FEC04BB63E954E509 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		DDBBF61C0ABA471CF788644A8E2F9387 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E08DEEF21C1529CF3F96251756310946 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
 		E230E41D6EE05CC596496E1B865FD685 /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30369EF63CCBF5B816B969336C3563C /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4CD617326949C83E48257BB43593FE4 /* MITDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MITDB-dummy.m"; sourceTree = "<group>"; };
-		EA9E74BA077F7E1343AEC5A4AED37E26 /* MitDBMigrationHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitDBMigrationHandle.h; sourceTree = "<group>"; };
 		ECA4D306C73A81B7192D3B9E1A4AABDC /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		EF20D7991A4BC047C9E12D5BD565D0EB /* Pods-PROJECT_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PROJECT_Example-dummy.m"; sourceTree = "<group>"; };
-		F5E682352EA5B2D90ADBC162D9232070 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F6027C9998087F8B33D61377056B8F24 /* SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-prefix.pch"; sourceTree = "<group>"; };
 		F7608D3E47AC1F943B425EF724E8B74E /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
+		FDFDAE496FB8B1D4BD9BE35BCEA21A06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FEE2C60D9A770D9535275BBCEC25FC34 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,7 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB60BD80206ABD8CF1591D7B4774D324 /* Foundation.framework in Frameworks */,
+				B78AF711DBF23B0A3318E10EE4720BEC /* Foundation.framework in Frameworks */,
 				DF9B1CE233CBFDE9BDA67C2B4D0716D5 /* SQLCipher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +272,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847E46DAF7F2F89AF2941F22AB1EE356 /* CoreFoundation.framework in Frameworks */,
-				C24C470DA674BC501A0A7E5375DA1A8C /* Foundation.framework in Frameworks */,
+				243F3F6390224BC8BA12B6D31D137470 /* CoreFoundation.framework in Frameworks */,
+				48BD4B5CC5AE875F01CA8E595D985500 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +281,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C380C73B66DAA6C9BBC60B9195F0E215 /* Foundation.framework in Frameworks */,
+				F9F9FA6A534DAC14F8571B36B2ABB725 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD13B3175DBC3BAB304BF127117E0915 /* FMDB.framework in Frameworks */,
-				22B44AE103DA5A78465CD513AE846E92 /* Foundation.framework in Frameworks */,
+				C1DB7054E6572B280BBD892F1AA7CF58 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,12 +298,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C547B5312AD1DEA67D3387ADA8F5149 /* AVFoundation.framework in Frameworks */,
+				E742EBD1D2B4B7F17E5C6D96AF5B878E /* AVFoundation.framework in Frameworks */,
 				F11C74DF33766CF0C96784D4B429D0DE /* FMDB.framework in Frameworks */,
 				E4867866E0E4BADB0307791CC2203FF6 /* FMDBMigrationManager.framework in Frameworks */,
-				C7D9CBC6C833F1FC6B56CD701485D062 /* Foundation.framework in Frameworks */,
+				103F13C0744EC63C954E8916339EC35F /* Foundation.framework in Frameworks */,
 				9B00CC006031E69E28AD3A024BDA6132 /* SQLCipher.framework in Frameworks */,
-				C812E677CCFDCD9473BC4E71A9B8808A /* UIKit.framework in Frameworks */,
+				5ECE2AD7A2AE5CD45A2289BCAD2C224C /* UIKit.framework in Frameworks */,
 				B07CD2AB5B2D77D5253474C6EAE22100 /* YYModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,22 +312,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4BBA7AF24F2BE546AB77B32E9D6853 /* Foundation.framework in Frameworks */,
-				6E386F28678F13CA2D72E31DFE2F4DAF /* Security.framework in Frameworks */,
+				FECA14E697A436DA51C8280F9FEAB07C /* Foundation.framework in Frameworks */,
+				1B85825037042B6420F91634CD7594E2 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CFAAF49F7404D659CD93990ECBE271E /* iOS */ = {
+		23B2B382759AD5BF29AB227AC557E0F8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6D184F9AD569AF4CC0BBE1F88D6CEFB0 /* AVFoundation.framework */,
-				64AF71E6328271DCEDF8E7533D898789 /* CoreFoundation.framework */,
-				2D606FC6CFFD2A57B5FB883761DB87DF /* Foundation.framework */,
-				3125C67B9875BDC8DFF203A759C9A020 /* Security.framework */,
-				F5E682352EA5B2D90ADBC162D9232070 /* UIKit.framework */,
+				C4359E78D6F1FD29DEAE9C59D1F6AF78 /* AVFoundation.framework */,
+				AEFE9C99A58437D418745D1AC79C8C90 /* CoreFoundation.framework */,
+				CD9E100807D5DFA83B80D9B4782CAF78 /* Foundation.framework */,
+				DC9BC4795250BB2FEC04BB63E954E509 /* Security.framework */,
+				FDFDAE496FB8B1D4BD9BE35BCEA21A06 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -365,20 +365,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		49EF8402FEB8516515F4062C7591964B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF8FBC8D38A38B48D000DA66CC38BE44 /* Info.plist */,
-				B14E23DC98620923B5566570BE10FD12 /* MITDB.modulemap */,
-				80BB80AE65659C2F348E79792B2CC69C /* MITDB.xcconfig */,
-				E4CD617326949C83E48257BB43593FE4 /* MITDB-dummy.m */,
-				A519B96B6D2F324C9D27672BACE9BA13 /* MITDB-prefix.pch */,
-				8BE4EA852CD9590A5D10CA64EFD689B0 /* MITDB-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example1/Pods/Target Support Files/MITDB";
-			sourceTree = "<group>";
-		};
 		4E51F9F8D7CD2ED60D8F3FC4503AF97E /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +374,29 @@
 			);
 			name = FMDB;
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		59B76CB8895E21CCAD68D27C59302676 /* MITDB */ = {
+			isa = PBXGroup;
+			children = (
+				CD437E877D230B094C1D82618E39B225 /* Classes */,
+			);
+			name = MITDB;
+			path = MITDB;
+			sourceTree = "<group>";
+		};
+		5CE0D42EBA1201D34FF095CFA9A5CF2D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDBBF61C0ABA471CF788644A8E2F9387 /* Info.plist */,
+				60BA40AF56574C055133D3780D5618F6 /* MITDB.modulemap */,
+				A88BDFAE954E2B8D7A8D2DE17547AC29 /* MITDB.xcconfig */,
+				1A6911C364B5BEF6ACFEDCFA4B54C8EC /* MITDB-dummy.m */,
+				6317E3E07F98A491A19B2EE6BE94CF14 /* MITDB-prefix.pch */,
+				0A7A67971FC89594F3FB6D2F2D750251 /* MITDB-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MITDB";
 			sourceTree = "<group>";
 		};
 		69F230B776B8D2D3EC7BB63B9F3590E1 /* Pods-PROJECT_Example */ = {
@@ -464,7 +473,7 @@
 				D91D8A5E55B426C1A96195032C051558 /* FMDBMigrationManager.framework */,
 				752C91AA765CF6488B23F4A6208C01B5 /* SQLCipher.framework */,
 				E230E41D6EE05CC596496E1B865FD685 /* YYModel.framework */,
-				1CFAAF49F7404D659CD93990ECBE271E /* iOS */,
+				23B2B382759AD5BF29AB227AC557E0F8 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -494,16 +503,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SQLCipher";
-			sourceTree = "<group>";
-		};
-		B259590A306360926995540183292EBA /* MITDB */ = {
-			isa = PBXGroup;
-			children = (
-				E1C2DC609489C524DEEF510E4F760586 /* MITDB */,
-				49EF8402FEB8516515F4062C7591964B /* Support Files */,
-			);
-			name = MITDB;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		B3C9A17F4995D38C7DBE6F62C6B2CCDB /* standard */ = {
@@ -537,30 +536,30 @@
 			path = FMDBMigrationManager;
 			sourceTree = "<group>";
 		};
-		C6CA53388FEA52F84D536372D4515E93 /* Classes */ = {
+		CD437E877D230B094C1D82618E39B225 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2EF10FF09E4477A653429EA23E08A12 /* MitDBMigration.h */,
-				81352B50C68AF880C1E733715FE71851 /* MitDBMigration.m */,
-				EA9E74BA077F7E1343AEC5A4AED37E26 /* MitDBMigrationHandle.h */,
-				44F2521220F730C31F6D90C0F9908A30 /* MitDBMigrationHandle.m */,
-				31DF82E4E399FBA17535522183E79EAD /* MitDBParam.h */,
-				26C1F018CA2F8DBCB8C34E26E0240AFE /* MitDBParam.m */,
-				64752855E01986D27E1481F74D4DDF3E /* MitDBProtocal.h */,
-				BA326EC793A134974105AA95C64B7755 /* MitFMEncryptDatabase.h */,
-				3E2890B13BE9EACE325928CB7B79807E /* MitFMEncryptDatabase.m */,
-				78AFCA6C4787DD02C96A394B2E2A98DC /* MitFMEncryptDatabaseQueue.h */,
-				6F56488E2A7B3B2BDC95FFD366349514 /* MitFMEncryptDatabaseQueue.m */,
-				3FC7627D44478A8FD0B5400E13779214 /* MitFMEncryptHelper.h */,
-				3040451D33F9EDC55A8FDD04DB725E3F /* MitFMEncryptHelper.m */,
-				883E76DA61E89B5CC1CD63E7903B8D32 /* NSObject+MitDBHandle.h */,
-				A8C4E163FA9DF7562B49D2022C96F1D2 /* NSObject+MitDBHandle.m */,
-				29FD05C98F6F003317209B179CCA47ED /* NSObject+MitDBParam.h */,
-				24C3CEB6248309FF1003437A0A06DB88 /* NSObject+MitDBParam.m */,
-				4034FD194E7D0952A1DCCBFA456CBA1B /* NSObject+MitEncrypt.h */,
-				E0671ACAF982D2A77BBE4A7DDDE3DA3C /* NSObject+MitEncrypt.m */,
-				CECC6D6173B6CE33921AFDEB83E80129 /* NSObject+MitTools.h */,
-				73DC94A61269AC33489BE86A161F7C52 /* NSObject+MitTools.m */,
+				AAB1C85B94C585219DF13A2454E0BCC1 /* MitDBMigration.h */,
+				C62C63E61F50C77C22D3FCF2C4CA896B /* MitDBMigration.m */,
+				2969BAF915F0467CA3FBC27B9E76FC02 /* MitDBMigrationHandle.h */,
+				46A76BA79D7B8CDAF622711E28B870AF /* MitDBMigrationHandle.m */,
+				C49634E7F7AC9C9065CB6F3AFBD21E51 /* MitDBParam.h */,
+				A88C9A7A220E4A7B0A8EDEFD8CA8B374 /* MitDBParam.m */,
+				AD23712234CC0A38BA897EA12001B12D /* MitDBProtocal.h */,
+				68112DF00D12E2BFFA66227E652C5563 /* MitFMEncryptDatabase.h */,
+				368BFFA47E764DEFE5F05592AA442701 /* MitFMEncryptDatabase.m */,
+				430D70EACFDE98F67DB851AD518CEB47 /* MitFMEncryptDatabaseQueue.h */,
+				370ADD6E95396B4AA31486CEA46030E8 /* MitFMEncryptDatabaseQueue.m */,
+				7EB4BD035ACB6D24365AD73C77425B55 /* MitFMEncryptHelper.h */,
+				5D5FC3C5D235276AC599D20399C1E1FF /* MitFMEncryptHelper.m */,
+				8E0003AA5EBE8C6F77D6E21BD5E38E3C /* NSObject+MitDBHandle.h */,
+				CFF142BBBA4C924C808A6F50F8E9F6D3 /* NSObject+MitDBHandle.m */,
+				087902AA4F5F7CB6C1457D7E7D5897E5 /* NSObject+MitDBParam.h */,
+				8E8B4AA6D76B0783E5019B64292C4BCD /* NSObject+MitDBParam.m */,
+				4F0F56794F68D9F551F6D3C52EBEDAF2 /* NSObject+MitEncrypt.h */,
+				CB814EC2D23D71D1B2093D98FCB843E6 /* NSObject+MitEncrypt.m */,
+				9ED68DC9DBD4031CA0ED009B6E8473E1 /* NSObject+MitTools.h */,
+				27D9175F99228364403F06D4CA4BC517 /* NSObject+MitTools.m */,
 			);
 			name = Classes;
 			path = Classes;
@@ -585,15 +584,6 @@
 			name = System;
 			sourceTree = "<group>";
 		};
-		E1C2DC609489C524DEEF510E4F760586 /* MITDB */ = {
-			isa = PBXGroup;
-			children = (
-				C6CA53388FEA52F84D536372D4515E93 /* Classes */,
-			);
-			name = MITDB;
-			path = MITDB;
-			sourceTree = "<group>";
-		};
 		ECC19FE21122E7024E588CBA13D5A829 /* SQLCipher */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,9 +605,19 @@
 		F71E1417BCD88D5D37EF2C07C5296E93 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B259590A306360926995540183292EBA /* MITDB */,
+				FB31D868B6325FA0A5760F3A8DE076C4 /* MITDB */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FB31D868B6325FA0A5760F3A8DE076C4 /* MITDB */ = {
+			isa = PBXGroup;
+			children = (
+				59B76CB8895E21CCAD68D27C59302676 /* MITDB */,
+				5CE0D42EBA1201D34FF095CFA9A5CF2D /* Support Files */,
+			);
+			name = MITDB;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -815,7 +815,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -980,10 +980,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4AB1EF792F335EA141F79A145D12C4ED /* Debug */ = {
+		1A3D85C1FD1F34CBBF74FFB46FE207FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2190E1B53C8E6AE5829C41EA93B44940 /* YYModel.xcconfig */;
+			baseConfigurationReference = A462550630473BF91BB1CE70D1E1A62B /* FMDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -995,14 +996,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = YYModel;
+				PRODUCT_NAME = FMDB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1011,81 +1012,16 @@
 			};
 			name = Debug;
 		};
-		4C3F59ECCDC80FB67DCE245DEAB3EE41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 180063031923215CD9A9B803CD3A4154 /* SQLCipher.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SQLCipher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		503B197EC59F90409FFF0F5A5CB1C5CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 746C071476FDF8349DA4781E48F22147 /* Pods-PROJECT_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PROJECT_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PROJECT_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6EA83BDCE1F33FA254F3FC6297EC6C78 /* Release */ = {
+		2A02DFAA26FD7608B7A186BFC7BFB402 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0444FCCB43D704E56525DC68AF41FE6F /* FMDBMigrationManager.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1098,7 +1034,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FMDBMigrationManager/FMDBMigrationManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = FMDBMigrationManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1106,141 +1042,14 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		79DF45DACBF22A727E83432D91A0C2EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE6B3B608C2291F79C03E0B4E36D069E /* Pods-PROJECT_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PROJECT_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PROJECT_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Debug;
 		};
-		7CDF42923212610406EA51B414A5C36F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80BB80AE65659C2F348E79792B2CC69C /* MITDB.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MITDB/MITDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MITDB/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MITDB/MITDB.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MITDB;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		800EA48B98281EE3170977BECE0A2D0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80BB80AE65659C2F348E79792B2CC69C /* MITDB.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MITDB/MITDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MITDB/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MITDB/MITDB.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MITDB;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8C2191F979C376326317630F43B8EAB7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 180063031923215CD9A9B803CD3A4154 /* SQLCipher.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SQLCipher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1248,81 +1057,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		98C1C55DC652185E8511E387AA7FAEED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2190E1B53C8E6AE5829C41EA93B44940 /* YYModel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = YYModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -1351,15 +1092,224 @@
 			};
 			name = Debug;
 		};
-		C402DDEC29BBFD29DA5E4CD0A8056BD9 /* Debug */ = {
+		53445F4EE0C2EEB4D0C8D6D08BA451D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0444FCCB43D704E56525DC68AF41FE6F /* FMDBMigrationManager.xcconfig */;
+			baseConfigurationReference = 2190E1B53C8E6AE5829C41EA93B44940 /* YYModel.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7516E193F2784C185604DF4ABD9DB529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88BDFAE954E2B8D7A8D2DE17547AC29 /* MITDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MITDB/MITDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MITDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MITDB/MITDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MITDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		837843064AA5C88293DE20F3A59B1CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6B3B608C2291F79C03E0B4E36D069E /* Pods-PROJECT_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PROJECT_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PROJECT_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		849CB06B59C9425462695616E16E66ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2190E1B53C8E6AE5829C41EA93B44940 /* YYModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB8030A65BC096DAD48D7216D5089138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180063031923215CD9A9B803CD3A4154 /* SQLCipher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SQLCipher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD3AF394BD882200452D4567881FD458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0444FCCB43D704E56525DC68AF41FE6F /* FMDBMigrationManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1372,7 +1322,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FMDBMigrationManager/FMDBMigrationManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = FMDBMigrationManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1380,12 +1330,13 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		E1C998D40298C519125F0E67FA9E026B /* Debug */ = {
+		AEAFBD5903678269ECDA5B0E82E3CE44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A462550630473BF91BB1CE70D1E1A62B /* FMDB.xcconfig */;
+			baseConfigurationReference = 180063031923215CD9A9B803CD3A4154 /* SQLCipher.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1397,14 +1348,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FMDB/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLCipher/SQLCipher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLCipher/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SQLCipher/SQLCipher.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FMDB;
+				PRODUCT_NAME = SQLCipher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1413,10 +1364,43 @@
 			};
 			name = Debug;
 		};
-		EA0D0696FA8C87DB7A1F1F5F37B5ADDC /* Release */ = {
+		C5137E51C5759BC2F023C5B96EDF87BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88BDFAE954E2B8D7A8D2DE17547AC29 /* MITDB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MITDB/MITDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MITDB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MITDB/MITDB.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MITDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDBD4F9E08ABE72A99A85D51CA467985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A462550630473BF91BB1CE70D1E1A62B /* FMDB.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1444,14 +1428,50 @@
 			};
 			name = Release;
 		};
+		F479092821EB6F8FB74BCCF1F8648071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746C071476FDF8349DA4781E48F22147 /* Pods-PROJECT_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PROJECT_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PROJECT_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		28422A1AB435F85FE664FA52FB8E0C51 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1C998D40298C519125F0E67FA9E026B /* Debug */,
-				EA0D0696FA8C87DB7A1F1F5F37B5ADDC /* Release */,
+				1A3D85C1FD1F34CBBF74FFB46FE207FF /* Debug */,
+				DDBD4F9E08ABE72A99A85D51CA467985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1459,8 +1479,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1468,8 +1488,8 @@
 		5844148B58FC1F267EE6F57AB9D52143 /* Build configuration list for PBXNativeTarget "Pods-PROJECT_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79DF45DACBF22A727E83432D91A0C2EC /* Debug */,
-				503B197EC59F90409FFF0F5A5CB1C5CF /* Release */,
+				837843064AA5C88293DE20F3A59B1CA0 /* Debug */,
+				F479092821EB6F8FB74BCCF1F8648071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1477,8 +1497,8 @@
 		66843142DC963B6F0871C9B8DCDD08AD /* Build configuration list for PBXNativeTarget "YYModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AB1EF792F335EA141F79A145D12C4ED /* Debug */,
-				98C1C55DC652185E8511E387AA7FAEED /* Release */,
+				53445F4EE0C2EEB4D0C8D6D08BA451D8 /* Debug */,
+				849CB06B59C9425462695616E16E66ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1486,8 +1506,8 @@
 		758C81C124BEE86C1CDF242B6805F017 /* Build configuration list for PBXNativeTarget "SQLCipher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C2191F979C376326317630F43B8EAB7 /* Debug */,
-				4C3F59ECCDC80FB67DCE245DEAB3EE41 /* Release */,
+				AEAFBD5903678269ECDA5B0E82E3CE44 /* Debug */,
+				AB8030A65BC096DAD48D7216D5089138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1495,8 +1515,8 @@
 		790120C0CCD15812C92AD4A8CBB0F3E7 /* Build configuration list for PBXNativeTarget "FMDBMigrationManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C402DDEC29BBFD29DA5E4CD0A8056BD9 /* Debug */,
-				6EA83BDCE1F33FA254F3FC6297EC6C78 /* Release */,
+				2A02DFAA26FD7608B7A186BFC7BFB402 /* Debug */,
+				AD3AF394BD882200452D4567881FD458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1504,8 +1524,8 @@
 		CFC31B103CCC3DEE615E47E803077BD1 /* Build configuration list for PBXNativeTarget "MITDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				800EA48B98281EE3170977BECE0A2D0C /* Debug */,
-				7CDF42923212610406EA51B414A5C36F /* Release */,
+				C5137E51C5759BC2F023C5B96EDF87BB /* Debug */,
+				7516E193F2784C185604DF4ABD9DB529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MITDB/MitDBProtocal.h>
+#import "MitDBProtocal.h"
 
 @interface MITDBTestModelTwo : NSObject<MitDBProtocal>
 /**  <#Description#>*/
