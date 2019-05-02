@@ -8,119 +8,323 @@
 
 #import <Foundation/Foundation.h>
 @class MitDBParam;
-@protocol MitDBProtocal;
-
-
+@protocol MitDBProtocol;
 
 @interface NSObject (MitDBHandle)
-/**  主键值 */
+/**
+ primary key
+ @abstract why there are two keys?
+            The primaryvalue for instance is for select the data from
+ 
+ */
 @property(nonatomic, strong)NSString * primaryValue;
 
-//获取主键
-+ (NSString *)primaryKey;
-//是否有主键
-+ (BOOL)hasPrimaryKey;
-//忽略属性列表
-+ (NSArray *)ignoreKey;
-//是否是忽略属性
-+ (BOOL)isIgnoreKey:(NSString *)key;
-//数据库路径
-+ (NSString *)dbPath;
-//更新加密键
-+ (void)updateSQLCipherKey:(BOOL)encrypt;
+/**
+ ignore map
+ */
+@property(nonatomic, strong)NSMutableDictionary * ignoreMap;
 
 /**
- 存
- @param arr 数组
- @param param 条件参数
- @param transaction 事务
- @param tabName 表名
+ get primary key
+ */
++ (NSString *)primaryKey;
+
+/**
+ whether have primary key
+ */
++ (BOOL)hasPrimaryKey;
+
+/**
+ ignore key map
+ */
++ (NSArray *)ignoreKey;
+
+/**
+ is ignored key
+
+ @param key key
+ */
++ (BOOL)isIgnoreKey:(NSString *)key;
+
+/**
+ db path
+
+ */
++ (NSString *)dbPath;
+
+/**
+ get sqlcipher key
+
+ @param encrypt need encrypt
+ */
++ (void)updateSQLCipherKey:(BOOL)encrypt;
+
+#pragma mark save
+/**
+ save
  */
 - (void)save;
+
+/**
+ save
+
+ @param param param
+ */
 - (void)saveWithParam:(MitDBParam *)param;
-+ (void)save:(NSArray <id<MitDBProtocal>> *)arr param:(MitDBParam *)param;
-+ (void)save:(NSArray <id<MitDBProtocal>> *)arr
+
+/**
+ save
+
+ @param arr data's arr
+ @param param param
+ */
++ (void)save:(NSArray <id<MitDBProtocol>> *)arr
+       param:(MitDBParam *)param;
+
+/**
+ save
+
+ @param arr data's arr
+ @param param param
+ @param transaction whether in transaction
+ */
++ (void)save:(NSArray <id<MitDBProtocol>> *)arr
         param:(MitDBParam *)param
         inTransaction:(BOOL)transaction;
+
+/**
+ save
+
+ @param tabName table's name
+ */
 - (void)saveWithTabName:(NSString *)tabName;
+
+/**
+ save
+
+ @param param param
+ @param tabName table's name
+ */
 - (void)saveWithParam:(MitDBParam *)param
               tabName:(NSString *)tabName;
-+ (void)save:(NSArray <id<MitDBProtocal>> *)arr
+
+/**
+ save
+
+ @param arr data's arr
+ @param param param
+ @param tabName table's name
+ */
++ (void)save:(NSArray <id<MitDBProtocol>> *)arr
        param:(MitDBParam *)param
      tabName:(NSString *)tabName;
-+ (void)save:(NSArray <id<MitDBProtocal>> *)arr
+
+/**
+ save
+
+ @param arr data's arr
+ @param param param
+ @param transaction whether in transaction
+ @param tabName table's name
+ */
++ (void)save:(NSArray <id<MitDBProtocol>> *)arr
        param:(MitDBParam *)param
 inTransaction:(BOOL)transaction
      tabName:(NSString *)tabName;
 
+#pragma mark update
 /**
- 改
- @param arr 数组
- @param param 条件参数
- @param transaction 事务
- @param tabName 表名
+ update
  */
 - (void)update;
+
+/**
+ update
+
+ @param tabName table's name
+ */
 - (void)updateWithTabName:(NSString *)tabName;
+
+/**
+ update
+
+ @param param param
+ */
 - (void)updateWithParam:(MitDBParam*)param;
+
+/**
+ update
+
+ @param param param
+ @param tabName table's name
+ */
 - (void)updateWithParam:(MitDBParam*)param
                 tabName:(NSString *)tabName;
-+ (void)update:(NSArray <id<MitDBProtocal>> *)arr
+
+/**
+ update
+
+ @param arr data's arr
+ @param param param
+ */
++ (void)update:(NSArray <id<MitDBProtocol>> *)arr
          param:(MitDBParam *)param;
-+ (void)update:(NSArray <id<MitDBProtocal>> *)arr
+
+/**
+ update
+
+ @param arr data's arr
+ @param param param
+ @param tabName table's name
+ */
++ (void)update:(NSArray <id<MitDBProtocol>> *)arr
          param:(MitDBParam *)param
        tabName:(NSString *)tabName;
-+ (void)update:(NSArray <id<MitDBProtocal>> *)arr
+
+/**
+ update
+
+ @param arr data's arr
+ @param param param
+ @param transaction whether use transaction
+ */
++ (void)update:(NSArray <id<MitDBProtocol>> *)arr
         param:(MitDBParam *)param
         inTransaction:(BOOL)transaction;
-+ (void)update:(NSArray <id<MitDBProtocal>> *)arr
+
+/**
+ update
+
+ @param arr data's arr
+ @param param param
+ @param transaction whether use transaction
+ @param tabName table's name
+ */
++ (void)update:(NSArray <id<MitDBProtocol>> *)arr
          param:(MitDBParam *)param
  inTransaction:(BOOL)transaction
        tabName:(NSString *)tabName;
 
+#pragma mark remove
 /**
- 删
- @param arr 数组
- @param param 条件参数
- @param transaction 事务
- @param tabName 表名
+ remove
  */
 - (void)remove;
+
+/**
+ remove
+
+ @param tabName table's name
+ */
 - (void)removeWithTabName:(NSString *)tabName;
-+ (void)remove:(NSArray<id<MitDBProtocal>>*)arr param:(MitDBParam *)param;
-+ (void)remove:(NSArray<id<MitDBProtocal>>*)arr
+
+/**
+ remove
+
+ @param arr array of data
+ @param param param
+ */
++ (void)remove:(NSArray<id<MitDBProtocol>>*)arr
+         param:(MitDBParam *)param;
+
+/**
+ remove
+
+ @param arr array of data
+ @param param param
+ @param tabName table's name
+ */
++ (void)remove:(NSArray<id<MitDBProtocol>>*)arr
          param:(MitDBParam *)param
        tabName:(NSString *)tabName;
-+ (void)remove:(NSArray<id<MitDBProtocal>>*)arr
+
+/**
+ remove
+
+ @param arr array of data
+ @param param param
+ @param transaction whether in transaction
+ */
++ (void)remove:(NSArray<id<MitDBProtocol>>*)arr
          param:(MitDBParam *)param
  inTransaction:(BOOL)transaction;
-+ (void)remove:(NSArray<id<MitDBProtocal>>*)arr
+
+/**
+ remove
+
+ @param arr array of data
+ @param param param
+ @param transaction whether in transaction
+ @param tabName table's name
+ */
++ (void)remove:(NSArray<id<MitDBProtocol>>*)arr
          param:(MitDBParam *)param
  inTransaction:(BOOL)transaction
        tabName:(NSString *)tabName;
-+ (void)clear;
-+ (void)clearWithTabName:(NSString *)tabName;
-
 
 /**
- 查
- @param arr 数组
- @param param 条件参数
- @param transaction 事务
- @param tabName 表名
- @param completion 完成回调
+ clear all data's for the table
  */
-+ (void)selectAllCompletion:(void(^)(NSArray *arr))completion;
++ (void)clear;
+
+/**
+ clear selected table
+
+ @param tabName table's name
+ */
++ (void)clearWithTabName:(NSString *)tabName;
+
+#pragma mark select
+/**
+ select
+
+ @param result result
+ */
++ (void)selectAllResult:(void(^)(NSArray *arr))result;
+
+/**
+ select
+
+ @param tabName table's name
+ @param result result
+ */
 + (void)selectAllWithTabName:(NSString *)tabName
-                  completion:(void(^)(NSArray *arr))completion;
+                      result:(void(^)(NSArray *arr))result;
+
+/**
+ select
+
+ @param param param
+ @param result result
+ */
 + (void)selectWithParam:(MitDBParam *)param
-             completion:(void(^)(NSArray * arr))completion;
+                 result:(void(^)(NSArray * arr))result;
+
+/**
+ select
+
+ @param param params
+ @param tabName table's name
+ @param result result
+ */
 + (void)selectWithParam:(MitDBParam *)param
                 tabName:(NSString *)tabName
-             completion:(void(^)(NSArray * arr))completion;
+                 result:(void(^)(NSArray * arr))result;
 
-//执行自建 sql 语句
-+ (BOOL) executeSQL:(NSString *)sql;
-+ (BOOL) executeSQLs:(NSArray *)sqls withTransaction:(BOOL)isTransaction;
+#pragma mark excute sql directly
+/**
+ excute sql
+
+ @param sql sql
+ */
++ (BOOL)executeSQL:(NSString *)sql;
+
+/**
+ excute sqls
+
+ @param sqls sqls
+ @param isTransaction whether use transaction
+ */
++ (BOOL)executeSQLs:(NSArray *)sqls withTransaction:(BOOL)isTransaction;
 
 @end

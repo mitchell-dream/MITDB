@@ -24,49 +24,8 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SQLCipher.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>YYModel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>2AD9E47B6F38A6307D50613A5019C805</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2B17F0636FD0F74B419226489639955B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5CEFC7F1ADAEA23C8A9613C6D06FE4EA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7F7A63947AC99DD3E99BD8F6F1E48BEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B6D9F00B0D5DB64256098571755CDB62</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C902FC5C76FA24B0C713B9101C8A6549</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

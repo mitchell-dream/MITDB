@@ -7,7 +7,7 @@
 //
 
 #import "MitFMEncryptHelper.h"
-//#import "sqlite3.h"
+#import "FMDatabase.h"
 #if __has_include(<sqlite3.h>)
 #import <sqlite3.h>
 #else
@@ -168,6 +168,7 @@
 }
 #pragma mark action 设置秘钥
 + (void)setEncryptKey:(NSString *)encryptKey{
-    [MitFMEncryptDatabase setEncryptKey:encryptKey];
+//    [MitFMEncryptDatabase setEncryptKey:encryptKey];
+//    [FMDatabase setEncryptKey:encryptKey];
 }
 @end

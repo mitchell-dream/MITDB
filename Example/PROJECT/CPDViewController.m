@@ -35,12 +35,15 @@
     mo.sexy = @"yes";
     [mo save];
     
+//    MitDBMigration * mit = [[MitDBMigration alloc]initWithName:@"" andVersion:1 andExecuteUpdateArray:nil];
+//    MitDBParam * param = []
     MITDBTestModel * mol = [MITDBTestModel new];
     mol.name = @"asfdljh";
     mol.age = 233;
     mol.psd = @"12asdfasdf";
     mol.uid = @"asdfsafd";
     mol.email = @"444444@aaaa.com";
+//    mol.iid = @"1";
     [mol save];
     [mol saveWithTabName:@"tableTwo"];
     

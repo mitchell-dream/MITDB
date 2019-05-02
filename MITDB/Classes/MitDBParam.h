@@ -58,15 +58,10 @@ typedef NS_ENUM(NSUInteger, Mit_FilterType) {
 //传递多个值
 - (MitDBParam *(^)(NSArray *)) values;
 
-
-
-
-
-
 //WHERE
 - (MitDBParam *(^)( NSString *  )) where;
 //HAVING
-- (MitDBParam *(^)( )) having;
+- (MitDBParam *(^)(void)) having;
 //相等
 - (MitDBParam *(^)(id)) equal;
 //不等
@@ -80,10 +75,9 @@ typedef NS_ENUM(NSUInteger, Mit_FilterType) {
 //大于等于
 - (MitDBParam *(^)(id)) moreEqualThan;
 //并
-- (MitDBParam *(^)())AND;
+- (MitDBParam *(^)(void))AND;
 //或
-- (MitDBParam *(^)())OR;
-
+- (MitDBParam *(^)(void))OR;
 
 /* Filter */
 //向后匹配
@@ -105,7 +99,6 @@ typedef NS_ENUM(NSUInteger, Mit_FilterType) {
 //偏移
 - (MitDBParam *(^)(id))offset;
 
-
 /* Calculate */
 //最大
 - (MitDBParam *(^)(NSString *))max;
@@ -117,8 +110,6 @@ typedef NS_ENUM(NSUInteger, Mit_FilterType) {
 - (MitDBParam *(^)(NSString *))sum;
 //数量
 - (MitDBParam  *(^)(NSString * ))count;
-
-
 
 /* Other */
 //别名

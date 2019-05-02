@@ -11,7 +11,7 @@
 #import <objc/runtime.h>
 #import "NSObject+MitDBHandle.h"
 #import "NSObject+MitTools.h"
-#import "MitDBProtocal.h"
+#import "MitDBProtocol.h"
 
 
 @implementation NSObject (MitDBParam)

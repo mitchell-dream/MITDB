@@ -16,7 +16,9 @@
 @end
 
 @implementation MitDBMigration
-- (instancetype)initWithName:(NSString *)name andVersion:(uint64_t)version andExecuteUpdateArray:(NSArray *)updateArray
+- (instancetype)initWithName:(NSString *)name
+                  andVersion:(uint64_t)version
+       andExecuteUpdateArray:(NSArray *)updateArray
 {
     if (self=[super init]) {
         _myName=name;

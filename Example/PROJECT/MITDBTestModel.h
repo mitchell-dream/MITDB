@@ -7,17 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MitDBProtocal.h"
+#import "MitDBHeader.h"
 
-@interface MITDBTestModel : NSObject<MitDBProtocal>
-/**  <#Description#>*/
+@interface MITDBTestModel : NSObject
 @property(nonatomic, strong)NSString * name;
-/**  <#Description#>*/
 @property(nonatomic, assign)NSInteger age;
-/**  <#Description#>*/
 @property(nonatomic, strong)NSString * email;
-/**  <#Description#>*/
 @property(nonatomic, strong)NSString * psd;
 @property(nonatomic, strong)NSString * uid;
-
+//@property(nonatomic, strong)NSString * iid;
 @end

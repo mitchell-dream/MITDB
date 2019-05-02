@@ -1,36 +1,32 @@
 PODS:
-  - FMDB/SQLCipher (2.6.2):
-    - SQLCipher
-  - FMDB/standard (2.6.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - FMDBMigrationManager (1.4.1):
     - FMDBMigrationManager/System (= 1.4.1)
   - FMDBMigrationManager/System (1.4.1):
     - FMDB/standard (>= 2.3)
-  - MITDB (0.1.5):
-    - FMDB/SQLCipher
+  - MITDB (0.1.6.6):
+    - FMDB
     - FMDBMigrationManager
-    - YYModel
-  - SQLCipher (3.4.1):
-    - SQLCipher/standard (= 3.4.1)
-  - SQLCipher/common (3.4.1)
-  - SQLCipher/standard (3.4.1):
-    - SQLCipher/common
-  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - MITDB (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
+    - FMDBMigrationManager
+
 EXTERNAL SOURCES:
   MITDB:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FMDBMigrationManager: d52007f328ea0665e8985ca8a33500707aef084f
-  MITDB: 64d1a6a8b3b0aea850f27c06511d06fcf5863c93
-  SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  MITDB: d542275e7c2ab2b08b07d1f065c31d2e2a44e439
 
 PODFILE CHECKSUM: ced1ec277b5e42a95d73f509a3907d3474cd2c22
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3

@@ -8,6 +8,13 @@
 
 #import "MITDBTestModel.h"
 
+@class MITDBTestModel;
+
+@interface MITDBTestModel()<MitDBProtocol>
+@end
+
+MITRegisterTable(MITDBTestModel);
+
 @implementation MITDBTestModel
 +(NSArray *)ignoreKeys{
     return @[@"name",@"age"];

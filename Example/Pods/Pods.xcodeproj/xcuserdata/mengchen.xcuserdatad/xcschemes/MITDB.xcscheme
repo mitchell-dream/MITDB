@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2AD9E47B6F38A6307D50613A5019C805'
-               BlueprintName = 'MITDB'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'MITDB.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "58F0D9270302E46D7AB8A1487BF6F28F"
+               BlueprintName = "MITDB"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "MITDB.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

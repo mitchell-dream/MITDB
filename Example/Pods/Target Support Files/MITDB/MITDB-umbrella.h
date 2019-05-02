@@ -10,10 +10,12 @@
 #endif
 #endif
 
+#import "MitDBHeader.h"
+#import "MitDBManager.h"
 #import "MitDBMigration.h"
 #import "MitDBMigrationHandle.h"
 #import "MitDBParam.h"
-#import "MitDBProtocal.h"
+#import "MitDBProtocol.h"
 #import "MitFMEncryptDatabase.h"
 #import "MitFMEncryptDatabaseQueue.h"
 #import "MitFMEncryptHelper.h"

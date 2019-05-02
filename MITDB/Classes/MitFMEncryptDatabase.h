@@ -11,8 +11,8 @@
 
 @interface MitFMEncryptDatabase : FMDatabase
 
-/** 设置秘钥 */
-+ (void)setEncryptKey:(NSString *)encryptKey;
+///** 设置秘钥 */
+//+ (void)setEncryptKey:(NSString *)encryptKey;
 
 
 @end

@@ -1,6 +1,6 @@
 {
   "name": "MITDB",
-  "version": "0.1.5",
+  "version": "0.1.6.6",
   "summary": "MITDB summary",
   "description": "A tool to encapsulation of the database",
   "homepage": "https://github.com/mcmengchen/MITDB",
@@ -8,14 +8,14 @@
   "authors": {
     "mcmengchen": "416922992@qq.com"
   },
-  "social_media_url": "http://www.jianshu.com/u/8661645b8f40",
+  "social_media_url": "http://mitchell-dream-god.com",
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
   "source": {
     "git": "https://github.com/mcmengchen/MITDB.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6.6"
   },
   "source_files": "MITDB/Classes/**/*.{h,m,cpp,mm}",
   "frameworks": [
@@ -23,13 +23,10 @@
     "AVFoundation"
   ],
   "dependencies": {
-    "YYModel": [
-
-    ],
     "FMDBMigrationManager": [
 
     ],
-    "FMDB/SQLCipher": [
+    "FMDB": [
 
     ]
   }

@@ -7,12 +7,13 @@
 //
 
 #import "CPDAppDelegate.h"
-
+#import "MitDBHeader.h"
 @implementation CPDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    [MitDBManager start];
     return YES;
 }
 

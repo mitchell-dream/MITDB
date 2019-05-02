@@ -9,7 +9,7 @@
 #import "NSObject+MitTools.h"
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
-#import "MitDBProtocal.h"
+#import "MitDBProtocol.h"
 @implementation NSObject (MitTools)
 
 NSString * MIT_IVARNAME = @"property_name";
@@ -25,7 +25,7 @@ NSString * MIT_SQLTYPE = @"sql_type";
     NSString * ivar_type = nil;
     NSString * sql_type = nil;
     Class clz = [self class];
-    if ([clz conformsToProtocol:@protocol(MitDBProtocal)]) {
+    if ([clz conformsToProtocol:@protocol(MitDBProtocol)]) {
         u_int count;
         Ivar * ivars = class_copyIvarList(clz, &count);
         for (int i = 0; i<count; i++) {
@@ -107,7 +107,7 @@ NSString * MIT_SQLTYPE = @"sql_type";
 #pragma mark action 转换成 Json 串
 + (id)changeToJsonWithType:( NSString *)ivarType value:(id)value{
     Class cls = NSClassFromString(ivarType);
-    if (value&&([cls isSubclassOfClass:[NSArray class]]||[cls isSubclassOfClass:[UIImage class]]||[cls conformsToProtocol:@protocol(MitDBProtocal)])) {
+    if (value&&([cls isSubclassOfClass:[NSArray class]]||[cls isSubclassOfClass:[UIImage class]]||[cls conformsToProtocol:@protocol(MitDBProtocol)])) {
         NSError * err = nil;
         NSData * data = [value dataUsingEncoding:NSUTF8StringEncoding];
         id obj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err];
@@ -121,7 +121,7 @@ NSString * MIT_SQLTYPE = @"sql_type";
 #pragma mark action 检查是否需要转换成 json 字符串
 - (id )checkToEncodeJsonString:(NSString *)ivarType{
     Class cls = NSClassFromString(ivarType);
-    if (self&&([cls isSubclassOfClass:[NSArray class]]||[cls isSubclassOfClass:[UIImage class]]||[cls isSubclassOfClass:[NSDictionary class]]||[cls conformsToProtocol:@protocol(MitDBProtocal)])) {
+    if (self&&([cls isSubclassOfClass:[NSArray class]]||[cls isSubclassOfClass:[UIImage class]]||[cls isSubclassOfClass:[NSDictionary class]]||[cls conformsToProtocol:@protocol(MitDBProtocol)])) {
         return [self encodedJsonString];
     } else {
         return self;
@@ -129,7 +129,7 @@ NSString * MIT_SQLTYPE = @"sql_type";
 }
 - (id )checkToEncodeJsonString{
     Class cls = [self class];
-    if (self&&([cls isSubclassOfClass:[NSArray class]]||[cls isSubclassOfClass:[UIImage class]]||[cls isSubclassOfClass:[NSDictionary class]]||[cls conformsToProtocol:@protocol(MitDBProtocal)])) {
+    if (self&&([cls isSubclassOfClass:[NSArray class]]||[cls isSubclassOfClass:[UIImage class]]||[cls isSubclassOfClass:[NSDictionary class]]||[cls conformsToProtocol:@protocol(MitDBProtocol)])) {
         return [self encodedJsonString];
     } else {
         return self;

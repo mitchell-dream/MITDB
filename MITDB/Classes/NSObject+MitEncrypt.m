@@ -163,6 +163,6 @@
 }
 #pragma mark action 设置秘钥
 + (void)setEncryptKey:(NSString *)encryptKey{
-    [MitFMEncryptDatabase setEncryptKey:encryptKey];
+    [FMDatabase setEncryptKey:encryptKey];
 }
 @end

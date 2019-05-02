@@ -9,55 +9,24 @@
 #import "NSObject+MitDBHandle.h"
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
-#import "MitDBProtocal.h"
+#import "MitDBProtocol.h"
 #import "MitFMEncryptDatabaseQueue.h"
 #import "NSObject+MitDBParam.h"
 #import "MitDBMigrationHandle.h"
 
 NSString * MIT_ENCRYPTKEY = @"0";
 
-
-
-@interface NSObject(MitDBHandle)
-
-/** 忽略字典属性 */
-@property(nonatomic, strong)NSMutableDictionary * ignoreDict;
-
-@end
-
 @implementation NSObject (MitDBHandle)
 
-
--(NSMutableDictionary *)ignoreDict{
-    return objc_getAssociatedObject(self, @selector(ignoreDict));
-}
--(void)setIgnoreDict:(NSMutableDictionary *)ignoreDict{
-    objc_setAssociatedObject(self, @selector(ignoreDict), ignoreDict, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(NSMutableDictionary *)ignoreMap{
+    return objc_getAssociatedObject(self, @selector(ignoreMap));
 }
 
-#pragma mark action 读取所有的表
-+ (void)load{
-    //获取所有的类
-    Class * classes = NULL;
-    int numClasses = objc_getClassList(NULL, 0);
-    if (numClasses > 0 )
-    {
-        //建表
-        classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * numClasses);
-        numClasses = objc_getClassList(classes, numClasses);
-        for (int i = 0; i < numClasses; i++) {
-            if ([class_getSuperclass(classes[i]) isSubclassOfClass:[NSObject class]]) {
-                if ([classes[i] conformsToProtocol:@protocol(MitDBProtocal)]) {
-                    //创建表
-                    [classes[i] createTable];
-                }
-            }
-        }
-        //迁移
-        free(classes);
-    }
+-(void)setignoreMap:(NSMutableDictionary *)ignoreMap{
+    objc_setAssociatedObject(self, @selector(ignoreMap), ignoreMap, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-#pragma mark action 创建数据队列
+
+#pragma mark action create the queue of db
 static NSString * kSQLITE_NAME = @"Record.sqlite";
 static NSString * kSQLCipherKey = @"kSQLCipherKey";
 static dispatch_once_t onceToken;
@@ -68,7 +37,6 @@ FMDatabaseQueue * DBQueue(){
         NSString *path=[Paths objectAtIndex:0];
         NSString * dbPath = [path stringByAppendingString:[NSString stringWithFormat:@"/%@",kSQLITE_NAME]];
         NSLog(@"%@",dbPath);
-        
         NSUserDefaults * user = [NSUserDefaults standardUserDefaults];
         [user integerForKey:kSQLCipherKey];
         if (![user integerForKey:kSQLCipherKey]) {
@@ -89,7 +57,7 @@ FMDatabaseQueue * DBQueue(){
     return dataQueue;
 }
 
-#pragma mark action 更新加密 key
+#pragma mark action sqlcipher key
 + (void)updateSQLCipherKey:(BOOL)encrypt{
     NSUserDefaults * user = [NSUserDefaults standardUserDefaults];
     if(encrypt){
@@ -103,7 +71,7 @@ FMDatabaseQueue * DBQueue(){
     onceToken = 0;
     dataQueue = nil;
 }
-#pragma mark action 获取数据库路径
+#pragma mark action dbPath
 +(NSString *)dbPath{
     NSArray *Paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *path=[Paths objectAtIndex:0];
@@ -112,25 +80,25 @@ FMDatabaseQueue * DBQueue(){
 }
 
 
-#pragma mark ------------------ 主键 ------------------
+#pragma mark primary key
 static NSString * const kPrimaryKey = @"kprimaryKey";
-#pragma mark action 主键值 setter
--(void)setPrimaryValue:(NSString *)primaryValue{
+#pragma mark action setter of the primaryValue
+- (void)setPrimaryValue:(NSString *)primaryValue{
     objc_setAssociatedObject(self, &kPrimaryKey, primaryValue, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-#pragma mark action 主键值 getter
--(NSString *)primaryValue{
+#pragma mark action getter of the primaryValue
+- (NSString *)primaryValue{
     if ([[self class] hasPrimaryKey]) {
         NSString * key = [[self class] primaryKey];
         id value = [self valueForKey:key];
         return value;
-    }else{
+    } else {
         return objc_getAssociatedObject(self, &kPrimaryKey);
     }
 }
 
 
-#pragma mark action 是否是被忽略的键值
+#pragma mark action whether is the ignored key
 + (BOOL)isIgnoreKey:(NSString *)key{
     NSArray * arr = [self ignoreKeys];
     if (!arr||arr.count==0) {
@@ -147,7 +115,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
 
 
 
-#pragma mark action 是否设置了主键
+#pragma mark action whether had the primary key
 + (BOOL)hasPrimaryKey{
     __block BOOL isHas = false;
     NSArray * arr = [self getAllPropertysFromClass];
@@ -161,33 +129,77 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
 }
 
 
-#pragma mark ------------------ 表操作 ------------------
-#pragma mark action 建表
+#pragma mark action create table
 + (void)createTable{
     NSArray * arr = [self tableNames];
     if (arr&&arr.count>0) {
         NSMutableArray * sqlArr = [NSMutableArray array];
         for (NSString * tabName in arr) {
-            NSString * sql = [self createTabSQLWithTabName:tabName];
-            [sqlArr addObject:sql];
+            //判断表是否存在，不存在创建，存在查看是否需要迁移，需要则迁移
+            if (![self isTableExist:tabName]) {
+                NSString * sql = [self createTabSQLWithTabName:tabName];
+                [sqlArr addObject:sql];
+            } else {
+#warning 判断是否需要迁移 注释 ：by mc
+            }
         }
-        [NSObject executeSQLs:sqlArr withTransaction:true];
+        if (sqlArr.count >0) {
+            BOOL result = [NSObject executeSQLs:sqlArr withTransaction:true];
+            if (result) {
+                NSLog(@"创建成功");
+            } else {
+                NSLog(@"创建失败");
+            }
+        } else {
+            NSLog(@"没有表需要创建");
+        }
     } else {
         NSString * sql = [self createTabSQL];
         NSLog(@"sql = ---%@",sql);
-        [NSObject executeSQL:sql];
+        if (![self isTableExist:[self tableName]]) {
+            BOOL result = [NSObject executeSQL:sql];
+            if (result) {
+                NSLog(@"创建成功");
+            } else {
+                NSLog(@"创建失败");
+            }
+        } else {
+            NSLog(@"没有表需要创建");
+        }
     }
 }
 
+- (BOOL)isTableExist:(NSString *)tableName
+{
+    __block BOOL result = NO;
+    NSArray *Paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *path=[Paths objectAtIndex:0];
+    NSString * dbPath = [path stringByAppendingString:[NSString stringWithFormat:@"/%@",kSQLITE_NAME]];
+    FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
+    NSString *name =nil;
+    if ([db open]) {
+        NSString * sql = [[NSString alloc]initWithFormat:@"select name from sqlite_master where type = 'table' and name = '%@'",tableName];
+        FMResultSet * rs = [db executeQuery:sql];
+        while ([rs next]) {
+            name = [rs stringForColumn:@"name"];
+            if ([name isEqualToString:tableName])
+            {
+                result =1;
+            }
+        }
+        [db close];
+    }
+    return result;
+}
 
-#pragma mark 表名称数组
+
+#pragma mark tables' name
 + (NSArray *)tableNames{
     return nil;
 }
 
 
-#pragma mark action 增加
-
+#pragma mark action save
 - (void)save{
     [self saveWithParam:nil];
 }
@@ -200,17 +212,15 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
 - (void)saveWithParam:(MitDBParam *)param{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql = [self saveSqlWithParam:param tabName:nil];
-        NSLog(@"sql = ---%@",sql);
         NSError * err = nil;
-        
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
             if (![[self class]hasPrimaryKey]) {
-                NSLog(@"主键值 = %lld",[db lastInsertRowId]);
+                NSLog(@"the primary key is %lld",[db lastInsertRowId]);
                 [self setPrimaryValue:[NSString stringWithFormat:@"%lld",[db lastInsertRowId]]];
             }
-            NSLog(@"保存成功");
+            NSLog(@"save succeed");
         }else{
-            NSLog(@"失败 %@",err);
+            NSLog(@"save failed %@",err);
         }
     }];
 }
@@ -218,22 +228,20 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
 - (void)saveWithParam:(MitDBParam *)param tabName:(NSString *)tabName{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql = [self saveSqlWithParam:param tabName:tabName];
-        NSLog(@"sql = ---%@",sql);
         NSError * err = nil;
-        
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
             if (![[self class]hasPrimaryKey]) {
-                NSLog(@"主键值 = %lld",[db lastInsertRowId]);
+                NSLog(@"the primary key is %lld",[db lastInsertRowId]);
                 [self setPrimaryValue:[NSString stringWithFormat:@"%lld",[db lastInsertRowId]]];
             }
-            NSLog(@"保存成功");
+            NSLog(@"save succeed");
         }else{
-            NSLog(@"失败 %@",err);
+            NSLog(@"save failed %@",err);
         }
     }];
 }
 
-+ (void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
++ (void)save:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
     if (!transaction) {
         [self save:arr param:param];
     }else{
@@ -245,7 +253,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
 }
 
-+ (void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction tabName:(NSString *)tabName {
++ (void)save:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction tabName:(NSString *)tabName {
     if (!transaction) {
         [self save:arr param:param tabName:tabName];
     }else{
@@ -257,13 +265,13 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
 }
 
-+ (void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
++ (void)save:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param{
     for (NSObject * obj in arr) {
         [obj saveWithParam:param];
     }
 }
 
-+ (void)save:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param tabName:(NSString *)tabName{
++ (void)save:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param tabName:(NSString *)tabName{
     if (tabName&&tabName.length>0) {
         for (NSObject * obj in arr) {
             [obj saveWithParam:param tabName:tabName];
@@ -273,20 +281,16 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
 }
 
-
-
-
-
-#pragma mark action 删除
+#pragma mark action remove
 - (void)remove{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql =  [self removeSqlWithParam:nil tabName:nil];
         NSError * err = nil;
         NSLog(@"sql = ---%@",sql);
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
-            NSLog(@"删除成功");
+            NSLog(@"remove succeed");
         }else{
-            NSLog(@"失败 %@",err);
+            NSLog(@"remove failed %@",err);
         }
     }];
 }
@@ -297,15 +301,15 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
         NSError * err = nil;
         NSLog(@"sql = ---%@",sql);
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
-            NSLog(@"删除成功");
+            NSLog(@"remove succeed");
         } else {
-            NSLog(@"失败 %@",err);
+            NSLog(@"remove failed %@",err);
         }
     }];
 }
 
 
-+ (void)remove:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
++ (void)remove:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param{
     if (!param) {
         for (NSObject * obj in arr) {
             [obj remove];
@@ -315,7 +319,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
 }
 
-+ (void)remove:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param tabName:(NSString *)tabName {
++ (void)remove:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param tabName:(NSString *)tabName {
     if (!param) {
         for (NSObject * obj in arr) {
             [obj removeWithTabName:tabName];
@@ -325,7 +329,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
 }
 
-+ (void)remove:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
++ (void)remove:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
     if (!transaction) {
         [self remove:arr param:param];
     }else{
@@ -337,7 +341,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }
 }
 
-+ (void)remove:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction tabName:(NSString *)tabName {
++ (void)remove:(NSArray<id<MitDBProtocol>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction tabName:(NSString *)tabName {
     if (!transaction) {
         [self remove:arr param:param tabName:tabName];
     }else{
@@ -352,16 +356,16 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
 }
 
 
-#pragma mark action 清空表内容
+#pragma mark action clear
 + (void)clear{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql =  [self removeAllSql:[self tableName]];
         NSError * err = nil;
         NSLog(@"sql = ---%@",sql);
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
-            NSLog(@"删除成功");
+            NSLog(@"clear succeed");
         }else{
-            NSLog(@"失败 %@",err);
+            NSLog(@"clear failed %@",err);
         }
     }];
 }
@@ -372,16 +376,16 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
         NSError * err = nil;
         NSLog(@"sql = ---%@",sql);
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
-            NSLog(@"删除成功");
+            NSLog(@"clear succeed");
         }else{
-            NSLog(@"失败 %@",err);
+            NSLog(@"clear failed %@",err);
         }
     }];
 }
 
 
 
-#pragma mark action 修改
+#pragma mark action update
 - (void)update{
     [self updateWithParam:nil];
 }
@@ -396,9 +400,9 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
         NSLog(@"sql = ---%@",sql);
         NSError * err = nil;
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
-            NSLog(@"修改成功");
+            NSLog(@"update succeed");
         }else{
-            NSLog(@"修改失败 %@",err);
+            NSLog(@"update failed %@",err);
         }
     }];
 }
@@ -408,26 +412,30 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
         NSLog(@"sql = ---%@",sql);
         NSError * err = nil;
         if ([db executeUpdate:sql withErrorAndBindings:&err]) {
-            NSLog(@"修改成功");
+            NSLog(@"update succeed");
         }else{
-            NSLog(@"修改失败 %@",err);
+            NSLog(@"update failed %@",err);
         }
     }];
 }
 
-+ (void)update:(NSArray <id<MitDBProtocal>> *)arr param:(MitDBParam *)param{
++ (void)update:(NSArray <id<MitDBProtocol>> *)arr
+         param:(MitDBParam *)param{
     for (NSObject * obj in arr) {
         [obj updateWithParam:param];
     }
 }
 
-+ (void)update:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param tabName:(NSString *)tabName{
++ (void)update:(NSArray<id<MitDBProtocol>> *)arr
+         param:(MitDBParam *)param tabName:(NSString *)tabName{
     for (NSObject * obj in arr) {
         [obj updateWithParam:param tabName:tabName];
     }
 }
 
-+ (void)update:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction{
++ (void)update:(NSArray<id<MitDBProtocol>> *)arr
+         param:(MitDBParam *)param
+ inTransaction:(BOOL)transaction{
     if (!transaction) {
         [self update:arr param:param];
     }else{
@@ -438,7 +446,11 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
         [self executeSQLs:ar withTransaction:true];
     }
 }
-+ (void)update:(NSArray<id<MitDBProtocal>> *)arr param:(MitDBParam *)param inTransaction:(BOOL)transaction tabName:(NSString *)tabName {
+
++ (void)update:(NSArray<id<MitDBProtocol>> *)arr
+         param:(MitDBParam *)param
+ inTransaction:(BOOL)transaction
+       tabName:(NSString *)tabName {
     if (!transaction) {
         [self update:arr param:param tabName:tabName];
     }else{
@@ -451,37 +463,39 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
 }
 
 
-#pragma mark action 查询
-+ (void)selectAllCompletion:(void(^)(NSArray *arr))completion{
+#pragma mark action select
++ (void)selectAllResult:(void (^)(NSArray *))result{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql = [self selectSqlWithParam:nil tabName:nil];
         NSLog(@"sql = ---%@",sql);
         FMResultSet * set = [db executeQuery:sql];
-        NSMutableArray * result = [NSMutableArray array];
+        NSMutableArray * re = [NSMutableArray array];
         while ( [set next]) {
             id value = [self changeToObj:set :db];
-            [result addObject:value];
+            [re addObject:value];
         }
-        completion([result copy]);
+        result([re copy]);
     }];
 }
 
-+(void)selectAllWithTabName:(NSString *)tabName completion:(void (^)(NSArray *))completion{
++(void)selectAllWithTabName:(NSString *)tabName
+                 result:(void (^)(NSArray *))result{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql = [self selectSqlWithParam:nil tabName:tabName];
         NSLog(@"sql = ---%@",sql);
         FMResultSet * set = [db executeQuery:sql];
-        NSMutableArray * result = [NSMutableArray array];
+        NSMutableArray * re = [NSMutableArray array];
         while ( [set next]) {
             id value = [self changeToObj:set :db];
-            [result addObject:value];
+            [re addObject:value];
         }
-        completion([result copy]);
+        result([re copy]);
     }];
 }
 
 
-+ (void)selectWithParam:(MitDBParam *)param completion:(void (^)(NSArray *))completion{
++ (void)selectWithParam:(MitDBParam *)param
+             result:(void (^)(NSArray *))completion{
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql = [self selectSqlWithParam:param tabName:nil];
         FMResultSet * set = [db executeQuery:sql];
@@ -494,7 +508,9 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }];
 }
 
-+ (void)selectWithParam:(MitDBParam *)param tabName:(NSString *)tabName completion:(void (^)(NSArray *))completion {
++ (void)selectWithParam:(MitDBParam *)param
+                tabName:(NSString *)tabName
+                 result:(void (^)(NSArray *))completion {
     [DBQueue() inDatabase:^(FMDatabase *db) {
         NSString * sql = [self selectSqlWithParam:param tabName:tabName];
         FMResultSet * set = [db executeQuery:sql];
@@ -507,7 +523,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     }];
 }
 
-#pragma mark action 转换成对象
+#pragma mark action change to object
 - (id)changeToObj:(FMResultSet*)set :(FMDatabase *)db{
     NSArray * arr = [[self class] getAllPropertysFromClass];
     __block NSDictionary * dict = nil;
@@ -518,8 +534,6 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         dict = obj;
         key = [dict objectForKey:MIT_IVARNAME];
-        
-        
         /*
          if ([str isEqualToString:@"c"]) {
          typeEncoding = @"text";
@@ -568,8 +582,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
                     [object setValue:data forKey:key];
                 }
             }else{
-                //其他情况
-                [object setValue:[set objectForColumnName:key] forKey:key];
+                [object setValue:[set objectForColumn:key] forKey:key];
             }
         }
     }];
@@ -580,7 +593,7 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     return object;
 }
 
-#pragma mark action 执行任务
+#pragma mark action excute sql
 +(BOOL)executeSQL:(NSString *)sql{
     __block BOOL result = false;
     if (sql) {
@@ -588,9 +601,9 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
             result = [db executeUpdate:sql];
             if(result)
             {
-                NSLog(@"执行成功");
+                NSLog(@"succeed");
             }else{
-                NSLog(@"执行失败");
+                NSLog(@"failed");
             }
         }];
     }
@@ -604,9 +617,9 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
             for (NSString * str in sqls) {
                 result = [db executeUpdate:str];
                 if (!result) {
-                    NSLog(@"执行出现问题，自动回滚");
+                    NSLog(@"failed，roll back automatically");
                 }else{
-                    NSLog(@"执行成功");
+                    NSLog(@"do succeed");
                 }
             }
         }];
@@ -614,21 +627,21 @@ static NSString * const kPrimaryKey = @"kprimaryKey";
     return result;
 }
 
-#pragma mark ------------------ 类方法替代调用 ------------------
-#pragma mark action 主键 Key
+#pragma mark ------------------ Class Method ------------------
+#pragma mark action get the primary key
 + (NSString *)primaryKey{
     return [self mit_primaryKey];
 }
-
+#pragma mark default primary key
 + (NSString *)mit_primaryKey{
     return @"mit_db_primary";
 }
 
-#pragma mark action 获取忽略表
+#pragma mark action black keys
 + (NSArray *)ignoreKeys{
     return nil;
 }
-#pragma mark action 获取主键映射
+#pragma mark action get primary key map of the table
 + (NSDictionary *)tablePrimaryKeyMap{
     return nil;
 }

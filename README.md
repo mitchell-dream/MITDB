@@ -8,7 +8,7 @@
 # Introduce 
 + MITDB is again of FMDB encapsulation which add ORM,database migration and database encryption function.
 + MITDB is for object-oriented model of database operations
-+ MITDB use protocol named MitDBProtocal to add function into model without infestation.
++ MITDB use protocol named MitDBProtocol to add function into model without infestation.
 + MITDB increase the chain programming to create data updating and query function.
 + MITDB use MitDBMigrationHandle and MitDBMigration to perform the function of database migration.
 + MITDB use MitFMEncryptDatabase and MitFMEncryptDatabaseQueue to add database encryption function.
@@ -24,8 +24,8 @@ pod 'MITDB'
 ```
 //Your model
 #import <Foundation/Foundation.h>
-#import <MITDB/MitDBProtocal.h>
-@interface MITDBTestModel : NSObject<MitDBProtocal>
+#import <MITDB/MitDBProtocol.h>
+@interface MITDBTestModel : NSObject<MitDBProtocol>
 @property(nonatomic, strong)NSString * name;
 @property(nonatomic, assign)NSInteger age;
 @property(nonatomic, strong)NSString * email;
@@ -75,7 +75,7 @@ pa.where(@"name").equal(@"a").AND().propertyName(@"email").equal(@"123@qq.com");
 # 介绍 
 + MITDB 是对 FMDB 的二次封装，添加了 ORM 功能，数据库迁移功能和数据库加密功能。
 + MITDB 针对的是面向对象模型的数据库操作。
-+ MITDB 通过 MitDBProtocal 轻量级的协议引用方式到模型中，无侵染性。
++ MITDB 通过 MitDBProtocol 轻量级的协议引用方式到模型中，无侵染性。
 + MITDB 通过 MitDBParam 增加了链式编程创建数据的更新与查询语句。
 + MITDB 通过 MitDBMigrationHandle 与 MitDBMigration 类来添加数据库迁移功能。
 + MITDB 通过 MitFMEncryptDatabase 与 MitFMEncryptDatabaseQueue 来添加数据库加密功能。
@@ -92,8 +92,8 @@ pod 'MITDB'
 ```
 //自定义模型
 #import <Foundation/Foundation.h>
-#import <MITDB/MitDBProtocal.h>
-@interface MITDBTestModel : NSObject<MitDBProtocal>
+#import <MITDB/MitDBProtocol.h>
+@interface MITDBTestModel : NSObject<MitDBProtocol>
 @property(nonatomic, strong)NSString * name;
 @property(nonatomic, assign)NSInteger age;
 @property(nonatomic, strong)NSString * email;
