@@ -299,7 +299,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDBMigrationManager/FMDBMigrationManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MITDB/MITDB.framework",
@@ -312,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PROJECT_Example/Pods-PROJECT_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87531CB3AB139C057541037C /* [CP] Check Pods Manifest.lock */ = {

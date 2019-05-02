@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "58F0D9270302E46D7AB8A1487BF6F28F"
+               BlueprintIdentifier = "0403C1A49F40511B42C0F2E7E12C4BD4"
+               BuildableName = "MITDB.framework"
                BlueprintName = "MITDB"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "MITDB.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

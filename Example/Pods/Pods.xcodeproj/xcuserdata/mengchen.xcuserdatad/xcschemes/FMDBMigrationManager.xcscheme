@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FFDE64DAB6A80BDC5ACEAFEFDD820A7"
+               BlueprintIdentifier = "1AF0DEF3F2EF702411D28DF04CA9F079"
+               BuildableName = "FMDBMigrationManager.framework"
                BlueprintName = "FMDBMigrationManager"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "FMDBMigrationManager.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
